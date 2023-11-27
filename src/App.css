@@ -1,0 +1,146 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@property --d{
+    syntax: '<angle>';
+    inherits:true;
+    initial-value:0deg;
+  }
+body{
+  background-color: #161513;
+  background-image: url(./assets/img/stars-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover; /* Add this line */
+  background-position: center; /* Add this line */
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.content{
+  text-align: center;
+  max-width: 43.75rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.content .title{
+    color: #0a0a0a;
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1875rem;
+    display: inline-block;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    background: linear-gradient(120deg, #0396FF 20.69%, #7644ff 50.19%, #47b7fd 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content h1{
+  font-size: 5rem;
+  line-height: 1.2;
+  color: #fff;
+}
+.content p{
+    color: #ececec;
+    width: 80%;
+    margin: 1.5625rem auto 1.875rem;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9375rem;
+}
+
+.genButton{
+    font-family: 'Poppins';
+    border-radius: 2em;
+    text-decoration: none;
+    padding: 0.375rem 0.75rem;
+    width: 9em;
+    height: 3em;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 1.125rem;
+    background: linear-gradient(0deg,#A47CF3,#683FEA);
+    position: relative;
+}
+.genButton.secondary {
+  background: transparent; /* Cambia los colores del fondo según tu preferencia */
+}
+.genButton.secondary::before {
+  background: conic-gradient(from var(--d, 0deg),
+      #ffffff,
+      #e1060600 30deg 120deg,
+      #5d00ff 150deg 180deg, /* Cambia el color del segundo botón aquí */
+      #0000 210deg 300deg,
+      #e0e0e0 330deg);
+}
+
+.genButton::before{
+    content:"";
+    position:absolute;
+    inset:-.0625rem;
+    padding:.125rem;
+    border-radius:3em;
+    background:conic-gradient(from var(--d,0deg),
+    #ffffff,
+    #0000 30deg 120deg,
+    #683FEA 150deg 180deg,
+    #0000 210deg 300deg,
+    #b6a0ff 330deg);
+    -webkit-mask: radial-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask: radial-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;
+    mask-composite:intersect; 
+  }
+
+  .genButton::before, .genButton::after{
+    transition: .5s, 99999s 99999s transform, 99999s 99999s --d;
+  }
+  .genButton:hover{
+    box-shadow: inset 0px .0625rem 0px 0px rgba(255, 255, 255, 0.4), inset 0px -0.25rem 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px .0625rem rgba(255, 255, 255, 0.2), 0px 0px 11.25rem 0px #9917FF;
+    color: #ffffff;
+  }
+  .genButton:hover::after{
+    transform: rotate(360deg);
+    transition: .5s, 60s linear transform;
+  }
+  .genButton:hover::before{
+    --d: 15000deg;
+    transition: .5s,60s linear --d;
+  }
+  .genButton:hover:before{
+    background-color:transparent;
+  }
+
+  .sparkle {
+    fill: #ffffff;
+    transition: all 800ms ease;
+  }
+
+  .genButton:hover .sparkle {
+    fill: white;
+    transform: scale(1.1);
+  } 
+
+  

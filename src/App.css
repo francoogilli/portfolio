@@ -1,6 +1,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Poppins:wght@400;900&family=Roboto:ital,wght@0,500;0,900;1,900&display=swap');
 @property --d{
     syntax: '<angle>';
     inherits:true;
@@ -26,7 +26,7 @@ body{
 
 .content{
   text-align: center;
-  max-width: 43.75rem;
+  max-width: 51rem;
 }
 
 .hero {
@@ -41,22 +41,33 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.1875rem;
     display: inline-block;
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: 1.25rem;
     background: linear-gradient(120deg, #0396FF 20.69%, #7644ff 50.19%, #47b7fd 79.69%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .content h1{
-  font-size: 5rem;
+  font-size: 5.8rem;
   line-height: 1.2;
   color: #fff;
-  font-weight: bold;
+  font-weight: 900;
 }
 .content p{
     color: #ececec;
-    width: 80%;
+    width: 88%;
+    font-size: 1.0625rem;
     margin: 1.5625rem auto 1.875rem;
+}
+
+.titleSection{
+  font-weight: 900;
+  font-size: 3rem;
+  color: white;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  
 }
 
 .button-container{
@@ -137,13 +148,20 @@ body{
     transform: scale(1.1);
   } 
 
-/* En tu archivo CSS (App.css) */
-/* En tu archivo CSS (App.css) o en el lugar donde tengas tus estilos */
-.project-container {
+/* Add this to your App.css or create a new CSS file */
+.projects-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh; /* Puedes ajustar la altura según tus necesidades */
+  flex-wrap: wrap;
+  max-width: 1150px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container on the page */
 }
+
+/* Add a style for each individual Project component inside the projects-container */
+.projects-container .project {
+  /* Add any additional styling for individual projects here */
+  margin-bottom: 20px;
+}
+
 
   

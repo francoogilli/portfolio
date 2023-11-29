@@ -6,7 +6,7 @@ import {projectsData} from '../lib/data';
 function Projects() {
   return (
     <section>    
-    <h2 className='font-bold text-4xl text-white justify-center flex pb-16 items-center pt-52'>Projects</h2>
+    <h2 className='font-bold text-4xl text-white justify-center flex pb-16 items-center pt-15'>Projects</h2>
     <div className="projects-container">
       {projectsData.map((project, index) => (
         <Project

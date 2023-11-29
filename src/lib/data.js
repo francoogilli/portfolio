@@ -19,21 +19,27 @@ const projectsData = [
   export { projectsData }; 
   
   const skillsData = [
-    {
-      name: 'HTML'
-    },
-    {
-      name: 'CSS'
-    },
-    {
-      name: 'JavaScript'
-    },
-    {
-      name: 'React'
-    },
-    {
-        name: 'Tailwind'
-    },
+    
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Git",
+    "Tailwind",
+    "Prisma",
+    "MongoDB",
+    "Redux",
+    "GraphQL",
+    "Apollo",
+    "Express",
+    "PostgreSQL",
+    "Python",
+    "Django",
+    "Framer Motion",
+    
   ];
   
   export { skillsData };  

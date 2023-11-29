@@ -1,9 +1,7 @@
-// Portfolio.js
 import React from 'react';
 
-// En el archivo Project.jsx
-
 function Project({ title, description, imageUrl, demoUrl, githubRepo }) {
+  
   return (
     <div className="flex justify-center items-center py-6 px-6">
       <div className="max-w-md">

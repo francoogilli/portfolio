@@ -3,13 +3,13 @@ import React from 'react';
 
 // En el archivo Project.jsx
 
-function Project({ title, description, imageUrl, demoUrl, githubUrl }) {
+function Project({ title, description, imageUrl, demoUrl, githubRepo }) {
   return (
     <div className="flex justify-center items-center py-6 px-6">
       <div className="max-w-md">
         <div className="bg-zinc-800 p-4 rounded-3xl">
           <div className="relative overflow-hidden rounded-xl aspect-w-16 aspect-h-8 sm:aspect-w-4 sm:aspect-h-3 mb-4 drop-shadow-2xl">
-            <img
+            <img loading='lazy'
               src={imageUrl}
               alt={title}
               style={{ backgroundImage: `url('${imageUrl}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
@@ -28,12 +28,12 @@ function Project({ title, description, imageUrl, demoUrl, githubUrl }) {
               Ver Demo
             </a>
             <a
-              href={githubUrl}
+              href={githubRepo}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:underline"
             >
-              Repositorio GitHub
+              GitHub
             </a>
           </div>
         </div>

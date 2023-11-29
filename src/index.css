@@ -1,4 +1,20 @@
 @tailwind base;
 @talwind components;
-@tailwind utilities
+@tailwind utilities;
 
+
+
+  /* Scroll bar styles in WebKit browsers (such as Chrome and Safari)*/
+  ::-webkit-scrollbar {
+    width: .75rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #24242497; /* Cursor color (thumbs)*/
+    border-radius: .375rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color:transparent; /* Scroll bar background color*/
+  }
+  

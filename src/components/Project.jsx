@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Modal from './Modal'; // Importa el componente Modal
 
-function Project({ title, description, imageUrl, demoUrl, githubRepo }) {
+function Project({ title,techStack, description, imageUrl, demoUrl, githubRepo }) {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
@@ -46,7 +46,7 @@ function Project({ title, description, imageUrl, demoUrl, githubRepo }) {
               )}
             </p>
           </div>
-          <div className="flex justify-between">
+          <div className="flex justify-between ">
             <a href={demoUrl} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
               Ver Demo
             </a>
@@ -59,6 +59,7 @@ function Project({ title, description, imageUrl, demoUrl, githubRepo }) {
       {isModalOpen && (
         <Modal
           title={title}
+          techStack={techStack}
           description={description}
           imageUrl={imageUrl}
           demoUrl={demoUrl}

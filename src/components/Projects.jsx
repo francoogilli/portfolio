@@ -12,6 +12,7 @@ function Projects() {
         <Project
           key={index}
           title={project.title}
+          techStack={project.techStack}
           description={project.description}
           imageUrl={project.imageUrl}
           demoUrl={project.demoUrl}

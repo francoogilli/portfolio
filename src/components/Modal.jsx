@@ -37,8 +37,8 @@ function Modal({ title, techStack, description, imageUrl, demoUrl, githubRepo, o
           </svg>
         </button>
         <div ref={modalRef} className="relative max-w-3xl w-90vw h-full overflow-y-auto py-16" >
-          <div className="bg-[#232323] p-0 rounded-xl">
-            <div className="relative overflow-hidden rounded-t-xl aspect-w-16 aspect-h-20 sm:aspect-w-4 sm:aspect-h-5 mb-4">
+          <div className="bg-[#232323] p-0 rounded-3xl">
+            <div className="relative overflow-hidden rounded-t-3xl aspect-w-16 aspect-h-20 sm:aspect-w-4 sm:aspect-h-5 mb-4">
               <img
                 loading="lazy"
                 src={imageUrl}
@@ -48,10 +48,14 @@ function Modal({ title, techStack, description, imageUrl, demoUrl, githubRepo, o
               />
             </div>
             <h3 className="text-3xl text-white font-bold mb-2 px-5 pt-3">{title}</h3>
-            <div className='text-[#0086ff] font-semibold mb-6 px-5'>
-              <p>{techStack}</p>
+            <div className='text-[#0086ff]  mb-6 px-5'>
+              {techStack.map((tech, index) => (
+                <span key={index} className="inline-block bg-[#515157] rounded-full px-3 py-1 text-sm font-medium text-white mr-2 mb-2">
+                  {tech}
+                </span>
+              ))}
             </div>
-            <div className="text-gray-300 mb-6 px-5">
+            <div className="text-gray-200 mb-6 px-5">
               {description.split('\n').map((paragraph, index) => (
                 <p key={index} className="mb-4">
                   {paragraph}

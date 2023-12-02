@@ -10,7 +10,7 @@ import './App.css';
 function App() {
   return (
     <>
-      
+      <Header/>
       <Hero />
       <Skills />
       <Projects />

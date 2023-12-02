@@ -6,6 +6,31 @@ import bitcoinAppImage from '../assets/img/a.jpg';
 
 // Resto del código
 
+const links = [
+  {
+    name: "Home",
+    hash: "#Home",
+  },
+  {
+    name: "About",
+    hash: "#about",
+  },  
+  {
+    name: "Skills",
+    hash: "#skills",
+  },
+  {
+    name: "Projects",
+    hash: "#projects",
+  },
+
+  {
+    name: "Contact",
+    hash: "#contact",
+  },
+];
+export { links }; 
+
 const projectsData = [
     {
       title: "Bitcoin App",

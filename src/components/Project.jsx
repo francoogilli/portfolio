@@ -22,7 +22,7 @@ function Project({ title,techStack, description, imageUrl, demoUrl, githubRepo }
   return (
     <div className="flex justify-center items-center py-6 px-6">
       <div className="max-w-md">
-        <div className="bg-[#232323] p-4 rounded-3xl">
+        <div className="bg-[#14181a] border-[#202328] border p-1 rounded-2xl">
           <div
             className="relative overflow-hidden rounded-xl aspect-w-16 aspect-h-8 sm:aspect-w-4 sm:aspect-h-3 mb-4 drop-shadow-2xl cursor-pointer"
             onClick={openModal}
@@ -32,12 +32,12 @@ function Project({ title,techStack, description, imageUrl, demoUrl, githubRepo }
               src={imageUrl}
               alt={title}
               style={{ backgroundImage: `url('${imageUrl}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-              className="w-full h-full object-cover rounded-sm"
+              className="w-full h-full object-cover "
             />
           </div>
-          <h3 className="text-xl font-bold mb-2 text-white">{title}</h3>
+          <h3 className="text-xl font-bold mb-2 px-3 text-white">{title}</h3>
           <div className="max-h-24 overflow-hidden mb-6 cursor-pointer" onClick={openModal}>
-            <p className="text-gray-300">
+            <p className="text-[#B0B5C0] text-sm px-3">
               {truncatedDescription}{' '}
               {description.length > maxDescriptionLength && (
                 <span className="text-[#0086ff] font-semibold m-1 cursor-pointer hover:underline" onClick={openModal}>
@@ -46,7 +46,7 @@ function Project({ title,techStack, description, imageUrl, demoUrl, githubRepo }
               )}
             </p>
           </div>
-          <div className="flex justify-evenly p-1">
+          <div className="flex justify-evenly px-3 py-2">
 
                 <a 
                   href={githubRepo} 

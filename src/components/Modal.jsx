@@ -10,18 +10,18 @@ function Modal({ title, techStack, description, imageUrl, demoUrl, githubRepo, o
       }
     };
 
-    document.body.classList.add('overflow-hidden');
+    document.body.style.overflow = 'hidden';
     document.addEventListener('mousedown', handleOutsideClick);
 
     return () => {
-      document.body.classList.remove('overflow-hidden');
+      document.body.style.overflow = '';
       document.removeEventListener('mousedown', handleOutsideClick);
     };
   }, [onClose]);
 
   return (
     <>
-      <div className="fixed inset-0 px-3 z-50 flex items-center justify-center bg-black bg-opacity-70  overflow-y-auto">
+      <div className="fixed inset-0 px-3 z-50  flex items-center justify-center bg-black bg-opacity-70  overflow-y-auto">
         <button
           onClick={onClose}
           className="absolute top-4 right-4 p-2 text-gray-500 hover:text-gray-700 focus:outline-none z-10"
@@ -36,8 +36,8 @@ function Modal({ title, techStack, description, imageUrl, demoUrl, githubRepo, o
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
-        <div ref={modalRef} className="relative max-w-3xl w-90vw h-full overflow-y-auto py-16" >
-          <div className="bg-[#232323] p-0 rounded-3xl">
+        <div ref={modalRef} className="relative max-w-3xl w-90vw  h-full overflow-y-auto py-16" >
+          <div className="bg-[#14181a]  p-0 rounded-3xl">
             <div className="relative overflow-hidden rounded-t-3xl aspect-w-16 aspect-h-20 sm:aspect-w-4 sm:aspect-h-5 mb-4">
               <img
                 loading="lazy"
@@ -55,7 +55,7 @@ function Modal({ title, techStack, description, imageUrl, demoUrl, githubRepo, o
                 </span>
               ))}
             </div>
-            <div className="text-gray-200 mb-6 px-5">
+            <div className="text-[#B0B5C0] mb-6 px-5">
               {description.split('\n').map((paragraph, index) => (
                 <p key={index} className="mb-4">
                   {paragraph}

@@ -1,7 +1,7 @@
 // projectsData.js
 // Importa las imágenes
 import weatherAppImage from '../assets/img/weather-app-image.jpg';
-import bitcoinAppImage from '../assets/img/bitcoin-app-image.png';
+import bitcoinAppImage from '../assets/img/a.jpg';
 // ... otras importaciones
 
 // Resto del código

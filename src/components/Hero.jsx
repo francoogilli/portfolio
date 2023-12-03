@@ -40,7 +40,7 @@ const Hero = () => {
   };
 
   return (
-    <motion.div className="hero">
+    <motion.div id='home' className="hero">
       <motion.div className="content" variants={contentVariants} initial="hidden" animate="visible">
         <motion.span className="title" variants={titleVariants}>Full Stack Web Developer</motion.span>
         <motion.h1 variants={subtitleVariants}>Hello, I'm <span>Franco</span></motion.h1>

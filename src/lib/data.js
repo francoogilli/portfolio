@@ -9,7 +9,7 @@ import bitcoinAppImage from '../assets/img/a.jpg';
 const links = [
   {
     name: "Home",
-    hash: "#Home",
+    hash: "#home",
   },
   {
     name: "About",

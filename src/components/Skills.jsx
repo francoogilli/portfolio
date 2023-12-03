@@ -20,7 +20,7 @@ const fadeInAnimationVariants = {
 
 function Skills({}) {
   return (
-    <section className='mb-28 max-w-[53rem] mx-auto scroll-mt-28 text-center sm:mb-40 px-6'>
+    <section id="skills" className='mb-28 max-w-[53rem] mx-auto scroll-mt-28 text-center sm:mb-40 px-6'>
       <motion.h2 className='font-bold text-4xl text-white pb-16 items-center pt-10' variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"

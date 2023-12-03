@@ -21,14 +21,14 @@ function Modal({ title, techStack, description, imageUrl, demoUrl, githubRepo, o
 
   return (
     <>
-      <div className="fixed inset-0 px-3 z-50  flex items-center justify-center bg-black bg-opacity-70  overflow-y-auto">
-        <button
+      <div className="z-[999] fixed inset-0 px-3   flex items-center justify-center bg-black bg-opacity-70  overflow-y-auto">
+      <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 text-gray-500 hover:text-gray-700 focus:outline-none z-10"
+          className="absolute top-1 right-0 p-2 text-gray-400 hover:text-gray-300 focus:outline-none z-10"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-5 w-5"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -38,7 +38,7 @@ function Modal({ title, techStack, description, imageUrl, demoUrl, githubRepo, o
         </button>
         <div ref={modalRef} className="relative max-w-3xl w-90vw  h-full overflow-y-auto py-16" >
           <div className="bg-[#14181a]  p-0 rounded-3xl">
-            <div className="relative overflow-hidden rounded-t-3xl aspect-w-16 aspect-h-20 sm:aspect-w-4 sm:aspect-h-5 mb-4">
+            <div className="relative overflow-auto rounded-t-3xl aspect-w-16 aspect-h-20 sm:aspect-w-4 sm:aspect-h-5 mb-4">
               <img
                 loading="lazy"
                 src={imageUrl}

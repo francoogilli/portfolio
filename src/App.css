@@ -79,7 +79,7 @@ body::before {
   font-weight: 900;
 }
 .content p{
-    color: #ececec;
+    
     width: 88%;
     font-size: 1.0625rem;
     margin: 1.5625rem auto 1.875rem;
@@ -131,7 +131,7 @@ body::before {
     content:"";
     position:absolute;
     inset:-.0625rem;
-    padding:.125rem;
+    padding:.090rem;
     border-radius:3em;
     background:conic-gradient(from var(--d,0deg),
     #ffffff,

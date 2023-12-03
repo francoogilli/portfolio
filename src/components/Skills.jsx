@@ -21,7 +21,7 @@ const fadeInAnimationVariants = {
 function Skills({}) {
   return (
     <section id="skills" className='mb-28 max-w-[53rem] mx-auto scroll-mt-28 text-center sm:mb-40 px-6'>
-      <motion.h2 className='font-bold text-4xl text-white pb-16 items-center pt-10' variants={fadeInAnimationVariants}
+      <motion.h2 className='font-bold text-4xl text-white pb-10 items-center pt-10' variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
             viewport={{
@@ -31,7 +31,7 @@ function Skills({}) {
 
         {skillsData.map((skill, index) => (
         <motion.li
-            className=" font-semibold borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className=" font-semibold text-base borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"

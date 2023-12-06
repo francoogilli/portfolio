@@ -119,7 +119,7 @@ body::before {
     transition: all 450ms ease-in-out;
     font-weight: 600;
     color: #ffffff;
-    font-size: 1.125rem;
+    font-size: 1.0625rem;
     background: linear-gradient(0deg,#A47CF3,#683FEA);
     position: relative;
 }

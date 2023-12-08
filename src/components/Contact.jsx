@@ -1,73 +1,84 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.02 * index,
-    },
-  }),
-};
 
-function Contact() {
+const Contact = () => {
+  const formRef = useRef();
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { target } = e;
+    const { name, value } = target;
+
+    setForm({
+      ...form,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+  };
+
   return (
-    <section
-      id="contact"
-      className="mb-28 max-w-[53rem] mx-auto scroll-mt-28 text-center sm:mb-40 p-6"
-    >
-      <motion.h2
-        className="font-bold text-6xl text-white pb-10 items-center pt-10"
-        variants={fadeInAnimationVariants}
-        initial="initial"
-        whileInView="animate"
-        viewport={{
-          once: true,
-        }}
+    <section id="contact" className="bg-[#14181a] rounded-3xl mb-7 mx-5 max-w-[40rem] lg:mx-auto scroll-mt-28 sm:mb-4 ">
+      <motion.div
+        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        Contact me
-      </motion.h2>
+        <div className="flex flex-col gap-4">
+          <h3 className="text-white text-center font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[40px]">Contact.</h3>
 
-      {/* Contact Links */}
-      <div className="flex justify-center gap-2 space-x-4">
-        
-      <a
-          href="https://wa.me/543563491814"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-[#515157] font-semibold text-lg rounded-full px-3 py-1  text-white  mb-2"
-        >
-          WhatsApp
-        </a>
+          <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6">
+            <label className="flex flex-col">
+              <span className="text-white font-medium mb-4">Your Name</span>
+              <input type="text" name="name"
+                value={form.name}
+                onChange={handleChange}
+                placeholder="What's your name?"
+                className="bg-zinc-800 py-3 px-6 text-[.9375rem] placeholder:text-secondary text-white rounded-2xl outline-none border-none font-medium"
+              />
+            </label>
+            <label className="flex flex-col">
+              <span className="text-white font-medium mb-4">Your email</span>
+              <input type="email" name="email"
+                value={form.email}
+                onChange={handleChange}
+                placeholder="What's your email address?"
+                className="bg-zinc-800 py-3 px-6 text-[.9375rem] placeholder:text-secondary text-white rounded-2xl outline-none border-none font-medium"
+              />
+            </label>
+            <label className="flex flex-col">
+              <span className="text-white font-medium mb-4">Your Message</span>
+              <textarea
+                rows={7}
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                placeholder="What you want to say?"
+                className="bg-zinc-800 py-3 px-6 text-[.9375rem] placeholder:text-secondary text-white rounded-2xl outline-none border-none font-medium "
+              />
+            </label>
 
-        <a
-          href="mailto:francogilli10@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-[#515157] rounded-full px-3 py-1 font-semibold text-lg text-white mr-2 mb-2"
-        >
-          Gmail
-        </a>
-
-        
-        <a
-          href="https://www.linkedin.com/in/franco-gilli/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-[#515157] rounded-full px-3 py-1 font-semibold text-lg text-white mr-2 mb-2"
-        >
-          LinkedIn
-        </a>
-
-        
-      </div>
+            <div className="flex items-center justify-center">
+              <button
+                type="submit"
+                className="bg-zinc-800 py-3 px-8 rounded-2xl outline-none w-fit text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 font-bold shadow-md shadow-primary"
+              >
+                {loading ? "Sending..." : "Send"}
+              </button>
+            </div>
+          </form>
+        </div>
+      </motion.div>
     </section>
   );
-}
+};
 
 export default Contact;

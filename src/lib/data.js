@@ -68,7 +68,7 @@ const projectsData = [
     ".NET Framework",
     "Framer Motion",
     "MVC ASP.NET Core",
-    "Razor"
+    "Blazor"
     
   ];
   

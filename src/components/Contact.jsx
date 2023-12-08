@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
+import SendIcon from "../icons/SendIcon.jsx";
 
 const Contact = () => {
   const formRef = useRef();
@@ -42,7 +43,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          setMessage({ text: "Thank you. I will get back to you as soon as possible.", color: "green" });
+          setMessage({ text: "Thank you. I will get back to you as soon as possible.", color: "text-green-500" });
 
           setForm({
             name: "",
@@ -59,7 +60,7 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          setMessage({ text: "Ahh, something went wrong. Please try again.", color: "red" });
+          setMessage({ text: "Ahh, something went wrong. Please try again.", color: "text-red-500" });
         }
       );
   };
@@ -68,7 +69,7 @@ const Contact = () => {
     <section id="contact" className="bg-[#14181a] rounded-3xl mb-7 mx-5 mt-32 max-w-[40rem] lg:mx-auto scroll-mt-28 sm:mb-4 ">
       <motion.div className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
         <div className="flex flex-col gap-4">
-          <h3 className="text-white text-center font-black md:text-[50px] sm:text-[50px] xs:text-[40px] text-[40px]">Contact.</h3>
+          <h3 className="text-white text-center font-black md:text-[45px] sm:text-[45px] xs:text-[40px] text-[40px]">Contact.</h3>
 
           <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6">
             <label className="flex flex-col">
@@ -96,7 +97,7 @@ const Contact = () => {
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">Your Message</span>
               <textarea
-                rows={5}
+                rows={4}
                 name="message"
                 value={form.message}
                 onChange={handleChange}
@@ -108,15 +109,15 @@ const Contact = () => {
             <div className="flex items-center justify-center">
               <button
                 type="submit"
-                className="bg-zinc-800 py-3 px-8 rounded-2xl outline-none w-fit text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 font-bold shadow-md shadow-primary"
+                className="flex justify-center align-center bg-zinc-800 py-3 px-5 rounded-2xl outline-none w-fit gap-2 text-white font-bold bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br  shadow-md  shadow-blue-800/80"
               >
-                {loading ? "Sending..." : "Send"}
+                {loading ? "Sending..." : (<><SendIcon/>Send</>)}
               </button>
             </div>
           </form>
 
           {message.text && (
-            <div className={`text-${message.color}-500 font-semibold text-center mt-2`}>{message.text}</div>
+            <div className={`${message.color} font-semibold text-center mt-2`}>{message.text}</div>
           )}
         </div>
       </motion.div>

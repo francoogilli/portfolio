@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 import SendIcon from "../icons/SendIcon.jsx";
 import LoadingIcon from "../icons/LoadingIcon.jsx";
+import GmailIcon from "../icons/GmailIcon.jsx";
+import WhatsAppIcon from "../icons/WhatsAppIcon.jsx";
+import LinkedInIcon from "../icons/LinkedinIcon.jsx";
 
 const Contact = () => {
   const formRef = useRef();
@@ -110,7 +113,7 @@ const Contact = () => {
             <div className="flex items-center justify-center">
               <button
                 type="submit"
-                className="flex justify-center align-center bg-zinc-800 py-3 px-5 rounded-2xl outline-none w-fit gap-2 text-white font-bold bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br  shadow-md  shadow-blue-800/80"
+                className="flex justify-center align-center  py-3 px-5 rounded-2xl outline-none w-fit gap-2 text-white font-bold bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br  shadow-md  shadow-blue-800/80"
               >
                 {loading ? <LoadingIcon/> : (<><SendIcon/>Send</>)}
               </button>
@@ -119,9 +122,22 @@ const Contact = () => {
 
           {message.text && (
             <div className={`${message.color} font-semibold text-center mt-2`}>{message.text}</div>
-          )}
+          )}        
         </div>
+        <div className="text-white font-bold text-3xl text-center mt-7 mb-2">or</div>
+          <div className="flex items-center justify-center pt-2 gap-4">
+            <a href="https://wa.me/543563491814" className="text-white" target="_blank" rel="noopener noreferrer">
+              <WhatsAppIcon/>
+            </a>
+            <a href="mailto:francogilli10@gmail.com" className="text-white" target="_blank" rel="noopener noreferrer">
+              <GmailIcon/>
+            </a>
+            <a href="https://www.linkedin.com/in/franco-gilli/" className="text-white" target="_blank" rel="noopener noreferrer">
+              <LinkedInIcon/>
+            </a>
+          </div>     
       </motion.div>
+      
     </section>
   );
 };

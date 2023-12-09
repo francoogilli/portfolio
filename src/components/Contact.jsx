@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 import SendIcon from "../icons/SendIcon.jsx";
+import LoadingIcon from "../icons/LoadingIcon.jsx";
 
 const Contact = () => {
   const formRef = useRef();
@@ -111,7 +112,7 @@ const Contact = () => {
                 type="submit"
                 className="flex justify-center align-center bg-zinc-800 py-3 px-5 rounded-2xl outline-none w-fit gap-2 text-white font-bold bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br  shadow-md  shadow-blue-800/80"
               >
-                {loading ? "Sending..." : (<><SendIcon/>Send</>)}
+                {loading ? <LoadingIcon/> : (<><SendIcon/>Send</>)}
               </button>
             </div>
           </form>

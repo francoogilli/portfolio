@@ -157,7 +157,7 @@ body::before {
     transition: .5s, 60s linear transform;
   }
   .genButton:hover::before{
-    --d: 15000deg;
+    --d: 9000deg;
     transition: .5s,60s linear --d;
   }
   .genButton:hover:before{

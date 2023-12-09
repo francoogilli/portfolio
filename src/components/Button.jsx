@@ -1,15 +1,13 @@
+// Button.jsx
 import React from 'react';
-import '../App.css'; // Import your button CSS file
+import '../App.css'; // Importa tu archivo CSS de botones
 
-function Button({ text, secondary, svgPath }) {
+function Button({ children, secondary }) {
   const buttonClass = secondary ? 'genButton secondary' : 'genButton';
 
   return (
     <button className={buttonClass}>
-      {svgPath && <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" className="sparkle">
-        <path d={svgPath}></path>
-      </svg>}
-      {text}
+      {children}
     </button>
   );
 }

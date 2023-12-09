@@ -124,8 +124,8 @@ const Contact = () => {
             <div className={`${message.color} font-semibold text-center mt-2`}>{message.text}</div>
           )}        
         </div>
-        <div className="text-white font-bold text-3xl text-center mt-7 mb-2">or</div>
-          <div className="flex items-center justify-center pt-2 gap-4">
+        <div className="text-white font-bold text-3xl text-center pt-7">or</div>
+          <div className="flex items-center justify-center pt-7 gap-4">
             <a href="https://wa.me/543563491814" className="text-white" target="_blank" rel="noopener noreferrer">
               <WhatsAppIcon/>
             </a>

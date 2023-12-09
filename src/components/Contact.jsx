@@ -5,7 +5,7 @@ import SendIcon from "../icons/SendIcon.jsx";
 import LoadingIcon from "../icons/LoadingIcon.jsx";
 import GmailIcon from "../icons/GmailIcon.jsx";
 import WhatsAppIcon from "../icons/WhatsAppIcon.jsx";
-import LinkedInIcon from "../icons/LinkedinIcon.jsx";
+import LinkedInIcon from "../icons/LinkedInIcon.jsx";
 
 const Contact = () => {
   const formRef = useRef();

@@ -1,7 +1,7 @@
 // projectsData.js
 // Importa las imágenes
 import weatherAppImage from '../assets/img/weather-app-image.jpg';
-import bitcoinAppImage from '../assets/img/a.jpg';
+import ecommerceAppImage from '../assets/img/E-Commerce.jpg';
 // ... otras importaciones
 
 // Resto del código
@@ -33,12 +33,12 @@ export { links };
 
 const projectsData = [
     {
-      title: "Bitcoin App",
-      techStack: ["React.js", "MUI", "Python", "Framer Motion"],
-      description: "Pain.app is a real-time coaching app for students learning to paint. This app is my baby, designed and built on my own.\nThe tech stack is based on top of Flutter for the mobile app, connected to a Python & FastAPI backend, with data stored in Postgres, deployed on Heroku.\nBecause this isn't real, here's some gibberish to fill space :)\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur quia officia odio nulla consectetur aperiam ad tempora magni magnam nesciunt.\nFuga id sapiente facere ipsa eius exercitationem officiis deleniti, rerum dolorum asi. Deserunt soluta modi culpa animi.\n",
-      imageUrl: bitcoinAppImage,
-      demoUrl: "https://demo2.com",
-      githubRepo: "https://www.youtube.com/watch?v=ssEiM3zyN08&ab_channel=TahmidAhmed"
+      title: "E-Commerce App",
+      techStack: ["Next.js", "Tailwind", "Sanity", "Stripe"],
+      description: "Web description:\nIn this development project, he created a sportswear commerce website, using the power of Next.js 14, Stripe, and Sanity.io.\nFeatured Technologies:\nNext.js 14: The latest version of Next.js provides optimized performance, cleaner code structure, and faster navigation. I took advantage of the latest features of Next.js to build a modern and efficient website.\nSanity.io CMS: I used Sanity.io as a flexible and powerful CMS (Content Management System). This makes it easier to manage and update products, categories and content in general, providing efficient administration of the online store.\nHighlighted features:\nIntuitive User Interface: I designed an intuitive and attractive user interface to provide a pleasant shopping experience. Easy navigation and carefully structured pages allow users to find and explore products with ease.\nEfficient Content Management: Using Sanity.io, content management becomes efficient and accessible. Store owners can easily update product details, images and categories without requiring technical knowledge.",
+      imageUrl: ecommerceAppImage,
+      demoUrl: "https://ecommerce-fg.vercel.app/",
+      githubRepo: "https://github.com/francoogilli/ecommerce-nextjs"
     },
     {
       title: "Weather App",

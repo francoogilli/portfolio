@@ -142,7 +142,8 @@ body::before {
     -webkit-mask: radial-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
     mask: radial-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
     -webkit-mask-composite:xor;
-    mask-composite:intersect; 
+    mask-composite:calc(1); 
+
   }
 
   .genButton::before, .genButton::after{

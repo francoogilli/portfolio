@@ -23,10 +23,10 @@ function Project({ title,techStack, description, imageUrl, demoUrl, githubRepo }
 
   return (
     <div className="flex justify-center items-center py-6 px-6">
-      <div className="max-w-sm">
+      <div className="lg:max-w-sm sm:max-w-md">
         <div className="bg-[#14181a] border-[#202328] border p-1 rounded-2xl">
           <div
-            className="relative overflow-hidden rounded-xl aspect-w-16 aspect-h-8 sm:aspect-w-4 sm:aspect-h-3 mb-4 drop-shadow-2xl cursor-pointer"
+            className="relative overflow-hidden border-[#202328] border rounded-xl aspect-w-16 aspect-h-8 sm:aspect-w-4 sm:aspect-h-3 mb-4 drop-shadow-2xl cursor-pointer"
             onClick={openModal}
           >
             <img

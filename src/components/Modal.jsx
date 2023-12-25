@@ -57,7 +57,7 @@ function Modal({ title, techStack, description, imageUrl, demoUrl, githubRepo, o
                 </span>
               ))}
             </div>
-            <div className="text-[#B0B5C0] mb-6 px-5">
+            <div className="text-[#B0B5C0] text-sm mb-6 px-5">
               {description.split('\n').map((paragraph, index) => (
                 <p key={index} className="mb-4">
                   {paragraph}

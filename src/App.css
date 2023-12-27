@@ -175,25 +175,17 @@ body::before {
     box-shadow: inset 0px .0625rem 0px 0px rgba(255, 255, 255, 0.4), inset 0px -0.25rem 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px .0625rem rgba(255, 255, 255, 0.2), 0px 0px 11.25rem 0px #9917FF;
     color: #ffffff;
   }
-  .genButton:hover::after{
-    transform: rotate(360deg);
-    transition: .5s, 60s linear transform;
-  }
-  .genButton:hover::before{
-    --d: 9000deg;
-    transition: .5s,60s linear --d;
-  }
+ 
+  
   .genButton:hover:before{
     background-color:transparent;
   }
 
   .sparkle {
-    fill: #ffffff;
     transition: all 800ms ease;
   }
 
   .genButton:hover .sparkle {
-    fill: white;
     transform: scale(1.1);
   } 
 

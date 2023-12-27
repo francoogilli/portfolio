@@ -133,18 +133,40 @@ body::before {
     inset:-.0625rem;
     padding:.090rem;
     border-radius:3em;
+    -webkit-mask: radial-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask: radial-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;
+    mask-composite:calc(1); 
     background:conic-gradient(from var(--d,0deg),
     #ffffff,
     #e1060600 30deg 120deg,
     #7e5bf0 150deg 180deg,
     #0000 210deg 300deg,
     #e0e0e0 330deg);
+    animation: rotateAlways 2s linear infinite;
+  }
+  .genButton.secondary::before{
+    content:"";
+    position:absolute;
+    inset:-.0625rem;
+    padding:.090rem;
+    border-radius:3em;
     -webkit-mask: radial-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
     mask: radial-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
     -webkit-mask-composite:xor;
     mask-composite:calc(1); 
-
+    background:conic-gradient(from var(--d,0deg),
+    #ffffff);
+    animation: rotateAlways 2s linear infinite;
   }
+  @keyframes rotateAlways {
+  from {
+    --d: 0deg;
+  }
+  to {
+    --d: 360deg;
+  }
+}
 
   .genButton::before, .genButton::after{
     transition: .5s, 99999s 99999s transform, 99999s 99999s --d;

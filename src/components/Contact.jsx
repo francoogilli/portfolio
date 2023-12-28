@@ -101,7 +101,7 @@ const Contact = () => {
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">Your Message</span>
               <textarea
-                rows={4}
+                rows={3}
                 name="message"
                 value={form.message}
                 onChange={handleChange}
@@ -113,9 +113,9 @@ const Contact = () => {
             <div className="flex items-center justify-center">
               <button
                 type="submit"
-                className="flex justify-center align-center  py-3 px-5 rounded-2xl outline-none w-fit gap-2 text-white font-bold bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br  shadow-md  shadow-blue-800/80"
+                className="flex justify-center align-center  py-3.5 px-14 rounded-full outline-none w-fit gap-1 text-white font-semibold bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br  shadow-sm  shadow-blue-800/80"
               >
-                {loading ? <LoadingIcon/> : (<><SendIcon/>Send</>)}
+                {loading ? <LoadingIcon/> : (<>Send<SendIcon/></>)}
               </button>
             </div>
           </form>
@@ -124,17 +124,38 @@ const Contact = () => {
             <div className={`${message.color} font-semibold text-center mt-2`}>{message.text}</div>
           )}        
         </div>
-        <div className="text-white font-bold text-2xl text-center pt-7">or</div>
+        <div className="text-white font-semibold text-2xl text-center pt-7">or</div>
           <div className="flex items-center justify-center pt-7 gap-4">
-            <a href="https://wa.me/543563491814" className="text-white" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/543563491814" className="text-white bg-white/5 
+              border border-white/10 rounded-full
+              flex justify-center items-center gap-x-2
+              py-1 px-2 md:py-2 md:px-4
+              text-xs md:text-sm
+              transition
+              hover:scale-110 hover:bg-white/10" target="_blank" rel="noopener noreferrer">
               <WhatsAppIcon/>
-            </a>
-            <a href="mailto:francogilli10@gmail.com" className="text-white" target="_blank" rel="noopener noreferrer">
+              WhatsApp</a>
+            <a href="mailto:francogilli10@gmail.com" className="text-white bg-white/5 
+              border border-white/10 rounded-full
+              flex justify-center items-center gap-x-2
+              py-1 px-2 md:py-2 md:px-4
+              text-xs md:text-sm
+              transition
+              hover:scale-110 hover:bg-white/10" target="_blank" rel="noopener noreferrer">
               <GmailIcon/>
-            </a>
-            <a href="https://www.linkedin.com/in/franco-gilli/" className="text-white" target="_blank" rel="noopener noreferrer">
+            Gmail</a>
+            <a href="https://www.linkedin.com/in/franco-gilli/" className="
+            text-white bg-white/5 
+              border border-white/10 rounded-full
+              flex justify-center items-center gap-x-2
+              py-1 px-2 md:py-2 md:px-4
+              text-xs md:text-sm
+              transition
+              hover:scale-110 hover:bg-white/10"
+              target="_blank" 
+              rel="noopener noreferrer">
               <LinkedInIcon/>
-            </a>
+            LinkedIn</a>
           </div>     
       </motion.div>
       

@@ -19,7 +19,7 @@ function About({ }) {
                 I enrolled in a Programming Technician career, where I delved into the world of{" "}
                 <span className="font-medium">Web Development</span>.{" "}
                 <span className="italic">My favorite part of programming</span> is the
-                problem-solving aspect. I <span className="underline">love</span> the
+                problem-solving aspect. I love the
                 feeling of finally figuring out a solution to a problem. My tech stack encompasses both{" "}
                 <span className="font-medium">Frontend</span> and <span className="font-medium">Backend</span>,
                 and I've applied the MVC architecture pattern in .NET, integrating external APIs and databases. 

@@ -6,6 +6,7 @@ import LoadingIcon from "../icons/LoadingIcon.jsx";
 import GmailIcon from "../icons/GmailIcon.jsx";
 import WhatsAppIcon from "../icons/WhatsAppIcon.jsx";
 import LinkedInIcon from "../icons/LinkedInIcon.jsx";
+import EmailIcon from "../icons/EmailIcon.jsx";
 
 const Contact = () => {
   const formRef = useRef();
@@ -73,7 +74,7 @@ const Contact = () => {
     <section id="contact" className="bg-[#14181a] rounded-3xl mb-7 mx-5 mt-32 max-w-[40rem] lg:mx-auto scroll-mt-28 sm:mb-4 ">
       <motion.div className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
         <div className="flex flex-col gap-4">
-          <h3 className="text-white text-center font-black md:text-[45px] sm:text-[45px] xs:text-[40px] text-[40px]">Contact.</h3>
+          <h3 className="text-white text-center font-black md:text-[45px] sm:text-[45px] xs:text-[40px] text-[40px] flex items-center justify-center gap-4">Contact<EmailIcon/></h3>
 
           <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6">
             <label className="flex flex-col">
@@ -83,7 +84,7 @@ const Contact = () => {
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                placeholder="What's your name?"
+                placeholder="Enter your name"
                 className="bg-zinc-800 py-3 px-5 text-[.9375rem] placeholder:text-secondary text-white rounded-2xl outline-none border-none font-medium"
               />
             </label>
@@ -94,7 +95,7 @@ const Contact = () => {
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                placeholder="What's your email address?"
+                placeholder="Enter your email address"
                 className="bg-zinc-800 py-3 px-5 text-[.9375rem] placeholder:text-secondary text-white rounded-2xl outline-none border-none font-medium"
               />
             </label>
@@ -105,7 +106,7 @@ const Contact = () => {
                 name="message"
                 value={form.message}
                 onChange={handleChange}
-                placeholder="What you want to say?"
+                placeholder="Type your message here"
                 className="bg-zinc-800 py-3 px-5 text-[.9375rem] placeholder:text-secondary text-white rounded-2xl outline-none border-none font-medium "
               />
             </label>

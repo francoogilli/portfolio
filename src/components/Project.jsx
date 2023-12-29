@@ -4,7 +4,7 @@ import Modal from './Modal'; // Importa el componente Modal
 import GitHubIcon from '../icons/GitHubIcon.jsx';
 import LiveProjectIcon from '../icons/LiveProjectIcon.jsx';
 
-function Project({ title,techStack, description, imageUrl, demoUrl, githubRepo }) {
+function Project({ title,tags, description, image, link, github }) {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
@@ -31,9 +31,9 @@ function Project({ title,techStack, description, imageUrl, demoUrl, githubRepo }
           >
             <img
               loading="lazy"
-              src={imageUrl}
+              src={image}
               alt={title}
-              style={{ backgroundImage: `url('${imageUrl}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+              style={{ backgroundImage: `url('${image}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
               className="w-full h-full object-cover "
             />
           </div>
@@ -51,7 +51,7 @@ function Project({ title,techStack, description, imageUrl, demoUrl, githubRepo }
           <div className="flex justify-evenly px-3 py-2">
 
                 <a 
-                  href={githubRepo} 
+                  href={github} 
                   target="_blank" rel="noopener noreferrer" 
                   className="text-white text-sm bg-gradient-to-r from-black via-black to-black shadow-lg shadow-gray-500/50 dark:shadow-lg dark:shadow-gray-800/80  hover:bg-gradient-to-br focus:ring-4 font-medium rounded-xl first-letter:text-gray-400 px-3 py-2 flex items-center">
                   <GitHubIcon />
@@ -59,7 +59,7 @@ function Project({ title,techStack, description, imageUrl, demoUrl, githubRepo }
                 </a>
 
                 <a 
-                  href={demoUrl} 
+                  href={link} 
                   target="_blank" rel="noopener noreferrer" 
                   className="text-white text-sm bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 hover:bg-gradient-to-br focus:ring-4 font-medium rounded-xl px-3 py-2 flex items-center">
                   <LiveProjectIcon/>
@@ -72,11 +72,11 @@ function Project({ title,techStack, description, imageUrl, demoUrl, githubRepo }
       {isModalOpen && (
         <Modal
           title={title}
-          techStack={techStack}
+          tags={tags}
           description={description}
-          imageUrl={imageUrl}
-          demoUrl={demoUrl}
-          githubRepo={githubRepo}
+          image={image}
+          link={link}
+          github={github}
           onClose={closeModal}
         />
       )}

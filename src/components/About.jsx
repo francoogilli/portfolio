@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import User from '../icons/User';
 
 function About({ }) {
     
@@ -12,7 +13,7 @@ function About({ }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.175 }}>
             
-            <h2 className='font-bold text-4xl text-white justify-center flex pb-7 items-center pt-15'>About me</h2>
+            <h2 className='font-bold text-4xl text-white justify-center gap-3 flex pb-7 items-center pt-15'><><User/></>About me</h2>
             <p className=" text-gray-300">
                 After completing{" "}
                 <span className="font-medium">Secondary School</span>, I decided to follow my passion for programming.

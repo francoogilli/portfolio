@@ -2,11 +2,11 @@
 import React from 'react';
 import Project from './Project';
 import {projectsData} from '../lib/data'; 
-
+import Brackets from '../icons/Brackets';
 function Projects() {
   return (
     <section id='projects' className='mb-7'>    
-    <h2 className='font-bold text-4xl text-white justify-center flex pb-2 items-center pt-15'>Projects</h2>
+    <h2 className='font-bold text-4xl text-white justify-center gap-3 flex pb-2 items-center pt-15'><Brackets/>Projects</h2>
     <div className="projects-container">
       {projectsData.map((project, index) => (
         <Project

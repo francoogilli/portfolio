@@ -74,7 +74,7 @@ const Contact = () => {
     <section id="contact" className="bg-[#14181a] rounded-3xl mb-7 mx-5 mt-32 max-w-[40rem] lg:mx-auto scroll-mt-28 sm:mb-4 ">
       <motion.div className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
         <div className="flex flex-col gap-4">
-          <h3 className="text-white text-center font-black md:text-[45px] sm:text-[45px] xs:text-[40px] text-[40px] flex items-center justify-center gap-4">Contact<EmailIcon/></h3>
+          <h3 className="text-white text-center font-black md:text-[45px] sm:text-[45px] xs:text-[40px] text-[40px] flex items-center justify-center gap-4"><EmailIcon/>Contact</h3>
 
           <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6">
             <label className="flex flex-col">

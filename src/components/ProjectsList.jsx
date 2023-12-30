@@ -16,7 +16,7 @@ const ProjectList = () => {
   return (
     <>
       <SectionContainer id='projects'>
-        <h2 className='font-bold text-4xl text-white justify-center gap-3 flex pb-16 items-center pt-15'><Brackets/>Projects</h2>
+        <h2 className='font-bold text-4xl text-white justify-center gap-3 flex pb-16 items-center pt-16'><Brackets/>Projects</h2>
 
         {PROJECTS.map(({ image, title, description, tags,github,link }) => (
           <article key={title} className="mb-36 ">

@@ -6,7 +6,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
-import ProjectList from './components/ProjectsList';
+import Projects from './components/Projects';
 import './App.css';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <Hero />
       <About />
       <Skills />
-      <ProjectList />
+      <Projects />
       <Contact />
       <Footer />
     </>

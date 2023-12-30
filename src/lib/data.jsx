@@ -1,6 +1,6 @@
-import weatherApp from '../assets/img/weather-app-image.jpg';
-import ecommerceApp from '../assets/img/E-Commerce.jpg';
-import ticTacToeImage from '../assets/img/Tic-Tac-Toe.jpg';
+import weatherApp from '../assets/img/weather.webp';
+import ecommerceApp from '../assets/img/ecommerce.webp';
+import ticTacToeImage from '../assets/img/tic-tac-toe.webp';
 
 const links = [
   {
@@ -29,7 +29,7 @@ export { links };
 
 const TAGS ={
   TAILWIND:{
-    name: "Tailwind CSS",
+    name: "Tailwind",
     icon:(<svg viewBox="0 0 256 154" width="27" height="20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><defs><linearGradient x1="-2.778%" y1="32%" x2="100%" y2="67.556%" id="a"><stop stop-color="#2298BD" offset="0%"/><stop stop-color="#0ED7B5" offset="100%"/></linearGradient></defs><path d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0ZM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8Z" fill="url(#a)"/></svg>)
   },
   REACT:{
@@ -136,8 +136,8 @@ export { TAGS };
 
 const PROJECTS = [
     {
-      title: "E-Commerce App",
-      description: "Web description:\nIn this development project, he created a sportswear commerce website, using the power of Next.js 14, Stripe, and Sanity.io.\nFeatured Technologies:\nNext.js 14: The latest version of Next.js provides optimized performance, cleaner code structure, and faster navigation. I took advantage of the latest features of Next.js to build a modern and efficient website.\nSanity.io CMS: I used Sanity.io as a flexible and powerful CMS (Content Management System). This makes it easier to manage and update products, categories and content in general, providing efficient administration of the online store.\nHighlighted features:\nIntuitive User Interface: I designed an intuitive and attractive user interface to provide a pleasant shopping experience. Easy navigation and carefully structured pages allow users to find and explore products with ease.\nEfficient Content Management: Using Sanity.io, content management becomes efficient and accessible. Store owners can easily update product details, images and categories without requiring technical knowledge.",
+      title: "Ecommerce - Sports clothing store",
+      description:"Web description:\nIn this development project, he created a sportswear commerce website, using the power of Next.js 14, Stripe, and Sanity.io. \nFeatured Technologies: \nNext.js 14: The latest version of Next.js provides optimized performance, cleaner code structure, and faster navigation. I took advantage of the latest features of Next.js to build a modern and efficient website. \nSanity.io CMS: I used Sanity.io as a flexible and powerful CMS (Content Management System). This makes it easier to manage and update products, categories and content in general, providing efficient administration of the online store. \nHighlighted features: \nIntuitive User Interface: I designed an intuitive and attractive user interface to provide a pleasant shopping experience. Easy navigation and carefully structured pages allow users to find and explore products with ease.\nEfficient Content Management: Using Sanity.io, content management becomes efficient and accessible. Store owners can easily update product details, images and categories without requiring technical knowledge.",
       link: "https://ecommerce-fg.vercel.app/",
       github: "https://github.com/francoogilli/ecommerce-nextjs",
       image: ecommerceApp,

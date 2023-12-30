@@ -16,32 +16,12 @@ const ProjectList = () => {
   return (
     <>
       <SectionContainer id='projects'>
-        <h2 className='font-bold text-4xl text-white justify-center gap-3 flex pb-14 items-center pt-15'><Brackets/>Projects</h2>
+        <h2 className='font-bold text-4xl text-white justify-center gap-3 flex pb-16 items-center pt-15'><Brackets/>Projects</h2>
 
         {PROJECTS.map(({ image, title, description, tags,github,link }) => (
-          <article key={title} className="mb-32">
-            <div className="flex items-center justify-between">
-                <h3 className="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
-                <div>
-                <a href={github} className="text-white bg-white/5 
-                        border border-white/10 rounded-full
-                        inline-block mx-1 md:mx-1
-                        py-1.5 px-1.5 md:py-2 md:px-2
-                        text-xs md:text-sm
-                        transition
-                        hover:bg-white/10"><GitHubIcon/>
-                </a>
-                <a href={link} className="text-white bg-white/5 
-                        border border-white/10 rounded-full
-                        inline-block mx-1 md:mx-1
-                        py-1.5 px-1.5 md:py-2 md:px-2
-                        text-xs md:text-sm
-                        transition
-                        hover:bg-white/10"><LiveProjectIcon/>
-                </a>
-                </div>
-                
-            </div>
+          <article key={title} className="mb-36 ">
+            
+            <h3 className="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
             <p className={`text-lg text-white mb-0 text-pretty ${expandedProject === title ? '' : 'line-clamp-2'}`}>
               {description}
             </p>
@@ -60,7 +40,7 @@ const ProjectList = () => {
                   className={`text-white bg-white/5 
                         border border-white/10 rounded-full
                         inline-block mx-1 md:mx-1
-                        py-1 px-2 md:py-1 md:px-2
+                        py-1 px-2 md:py-1 md:px-2.5
                         text-xs md:text-xs
                         transition
                         hover:bg-white/10`}
@@ -79,6 +59,22 @@ const ProjectList = () => {
               src={image}
               alt={`Captura de pantalla del proyecto ${image}`}
             />
+            <div className="flex items-center justify-center pt-10 gap-3">
+                <a 
+                  href={github} 
+                  className="text-white flex justify-center items-center bg-white/5 border border-white/10 rounded-full gap-2 mx-1 md:mx-1 py-1 px-2 md:py-2 md:px-4 text-xs md:text-sm transition-all duration-200 hover:scale-110 hover:bg-white/10 mb-2 cursor-pointer"
+                  target="_blank"
+                >
+                  <GitHubIcon />Source Code
+                </a>
+                <a 
+                  href={link} 
+                  className="text-white flex justify-center items-center bg-white/5 border border-white/10 rounded-full gap-2 mx-1 md:mx-1 py-1 px-2 md:py-2 md:px-4 text-xs md:text-sm transition-all duration-200 hover:scale-110 hover:bg-white/10  mb-2 cursor-pointer"
+                  target="_blank"  
+                >
+                  <LiveProjectIcon />Live Demo
+                </a>
+            </div>
           </article>
         ))}
       </SectionContainer>

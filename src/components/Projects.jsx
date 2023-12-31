@@ -22,9 +22,15 @@ const ProjectList = () => {
           <article key={title} className="mb-36 ">
             
             <h3 className="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
-            <p className={`text-lg text-white mb-0 text-pretty ${expandedProject === title ? '' : 'line-clamp-2'}`}>
-              {description}
-            </p>
+            <div className={`text-lg text-white mb-0 text-pretty ${expandedProject === title ? '' : 'line-clamp-2'}`}>
+              {description.split('\n').map((line, index) => (
+                <React.Fragment key={index}>
+                  {line}
+                  <br />
+                  <br />
+                </React.Fragment>
+              ))}
+            </div>
             {description.length > 100 && (
               <button
                 onClick={() => toggleDescription(title)}

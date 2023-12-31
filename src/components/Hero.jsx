@@ -20,7 +20,7 @@ const Hero = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.2, delay: 0.7, ease: 'easeOut' }
+      transition: { duration: 0.2, delay: 0.2, ease: 'easeOut' }
     },
   };
 
@@ -29,7 +29,7 @@ const Hero = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.2, delay: 0.5, ease: 'easeOut' }
+      transition: { duration: 0.2, delay: 0.3, ease: 'easeOut' }
     },
   };
 
@@ -38,7 +38,7 @@ const Hero = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.2, delay: 0.3, ease: 'easeOut' }
+      transition: { duration: 0.2, delay: 0.4, ease: 'easeOut' }
     },
   };
 

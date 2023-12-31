@@ -126,7 +126,7 @@ const Contact = () => {
             <div className={`${message.color} font-semibold text-center mt-2`}>{message.text}</div>
           )}        
         </div>
-        <div className="text-white font-semibold text-2xl text-center pt-7">or</div>
+        <div className="text-white font-medium text-2xl text-center pt-7">or</div>
           <div className="flex items-center justify-center pt-7 gap-4">
             <a href="https://wa.me/543563491814" className="text-white bg-white/5 
               border border-white/10 rounded-full

@@ -32,7 +32,7 @@ function Skills({}) {
         {skillsData.map((skill, index) => (
         <motion.span
         key={index}
-        className={`text-white bg-white/5 border border-white/10 rounded-full inline-block mx-1 md:mx-1 py-1 px-2 md:py-2 md:px-4 text-xs md:text-sm transition hover:bg-white/10 mb-2 cursor-pointer`}
+        className={`text-white bg-white/5 border border-white/10 rounded-full inline-block mx-1 md:mx-1 py-1.5 px-2.5 md:py-2 md:px-4 text-xs md:text-sm transition hover:bg-white/10 mb-2 cursor-pointer`}
         variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"

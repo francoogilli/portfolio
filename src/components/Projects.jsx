@@ -1,13 +1,13 @@
-// ProjectList.jsx
+
 import React, { useState } from "react";
-import { TAGS, PROJECTS } from "../lib/data"; // Actualiza la ruta de importación según tu estructura de archivos
+import { PROJECTS } from "../lib/data"; 
 import SectionContainer from "./SectionContainer";
 import Brackets from '../icons/Brackets';
 import Chevrons from "../icons/ChevronsDown";
 import ChevronsUp from "../icons/ChevronsUp";
 import GitHubIcon from "../icons/GitHubIcon";
 import LiveProjectIcon from "../icons/LiveProjectIcon";
-const ProjectList = () => {
+const Projects = () => {
   const [expandedProject, setExpandedProject] = useState(null);
 
   const toggleDescription = (title) => {
@@ -90,4 +90,4 @@ const ProjectList = () => {
   );
 };
 
-export default ProjectList;
+export default Projects;

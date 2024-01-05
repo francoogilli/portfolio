@@ -1,6 +1,7 @@
 import weatherApp from '../assets/img/weather.webp';
 import ecommerceApp from '../assets/img/ecommerce.webp';
-import ticTacToeImage from '../assets/img/tic-tac-toe.webp';
+import ticTacToe from '../assets/img/tic-tac-toe.webp';
+import bikestore from '../assets/img/bikestore.webp';
 
 const links = [
   {
@@ -139,6 +140,10 @@ const TAGS ={
   BLAZOR:{
     name:"Blazor",
     icon:(<svg fill="#5C2D91" width="27" height="20" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M23.834 8.101a13.912 13.912 0 0 1-13.643 11.72 10.105 10.105 0 0 1-1.994-.12 6.111 6.111 0 0 1-5.082-5.761 5.934 5.934 0 0 1 11.867-.084c.025.983-.401 1.846-1.277 1.871-.936 0-1.374-.668-1.374-1.567v-2.5a1.531 1.531 0 0 0-1.52-1.533H8.715a3.648 3.648 0 1 0 2.695 6.08l.073-.11.074.121a2.58 2.58 0 0 0 2.2 1.048 2.909 2.909 0 0 0 2.695-3.04 7.912 7.912 0 0 0-.217-1.933 7.404 7.404 0 0 0-14.64 1.603 7.497 7.497 0 0 0 7.308 7.405s.549.05 1.167.035a15.803 15.803 0 0 0 8.475-2.528c.036-.025.072.025.048.061a12.44 12.44 0 0 1-9.69 3.963 8.744 8.744 0 0 1-8.9-8.972 9.049 9.049 0 0 1 3.635-7.247 8.863 8.863 0 0 1 5.229-1.726h2.813a7.915 7.915 0 0 0 5.839-2.578.11.11 0 0 1 .059-.034.112.112 0 0 1 .12.053.113.113 0 0 1 .015.067 7.934 7.934 0 0 1-1.227 3.549.107.107 0 0 0-.014.06.11.11 0 0 0 .073.095.109.109 0 0 0 .062.004 8.505 8.505 0 0 0 5.913-4.876.155.155 0 0 1 .055-.053.15.15 0 0 1 .147 0 .153.153 0 0 1 .054.053A10.779 10.779 0 0 1 23.834 8.1zM8.895 11.628a2.188 2.188 0 1 0 2.188 2.188v-2.042a.158.158 0 0 0-.15-.15z"></path></g></svg>)
+  },
+  ASTRO:{
+    name:"Astro",
+    icon:(<svg viewBox="0 0 256 366" xmlns="http://www.w3.org/2000/svg" width="27" height="20" preserveAspectRatio="xMidYMid"><path fill="#fff" d="M182.022 9.147c2.982 3.702 4.502 8.697 7.543 18.687L256 246.074a276.467 276.467 0 0 0-79.426-26.891L133.318 73.008a5.63 5.63 0 0 0-10.802.017L79.784 219.11A276.453 276.453 0 0 0 0 246.04L66.76 27.783c3.051-9.972 4.577-14.959 7.559-18.654a24.541 24.541 0 0 1 9.946-7.358C88.67 0 93.885 0 104.314 0h47.683c10.443 0 15.664 0 20.074 1.774a24.545 24.545 0 0 1 9.95 7.373Z"/><path fill="#FF5D01" d="M189.972 256.46c-10.952 9.364-32.812 15.751-57.992 15.751-30.904 0-56.807-9.621-63.68-22.56-2.458 7.415-3.009 15.903-3.009 21.324 0 0-1.619 26.623 16.898 45.14 0-9.615 7.795-17.41 17.41-17.41 16.48 0 16.46 14.378 16.446 26.043l-.001 1.041c0 17.705 10.82 32.883 26.21 39.28a35.685 35.685 0 0 1-3.588-15.647c0-16.886 9.913-23.173 21.435-30.48 9.167-5.814 19.353-12.274 26.372-25.232a47.588 47.588 0 0 0 5.742-22.735c0-5.06-.786-9.938-2.243-14.516Z"/></svg>)
   }
  
 }
@@ -154,21 +159,30 @@ const PROJECTS = [
       tags: [TAGS.NEXTJS,TAGS.SANITY, TAGS.STRIPE,TAGS.TAILWIND],
     },
     {
-      title: "Weather App",
-      description: "The Weather App delivers precise and up-to-date weather information with detailed forecasts and highlights of the day. It also has a forecast for the day and week. \nQuick Search: Enter a place name and get instant results with our search function. Select your desired location and access accurate forecasts.\nIntuitive Visualization: The sleek and modern user interface offers you a pleasant visual experience. From weather icons to graphs, the app presents information clearly and concisely.\nDetailed Forecasts: Plan your day or week with accurate and detailed forecasts. Switch between hourly view and 5-day view with a single click for specific information.\nHighlights of the Day: Discover essential data of the day, such as wind chill, wind speed, highs and lows, humidity and atmospheric pressure, all presented in a clear and concise manner.",
-      link: "https://francogilli-weatherapp.netlify.app/#/",
-      github: "https://github.com/francoogilli/WeatherApp",
-      image: weatherApp,
-      tags: [TAGS.VUE, TAGS.JAVASCRIPT, TAGS.API, TAGS.CSS],
+      title: "Bike Store",
+      description: "The page is a showcase of the Siroko Sidney bicycle, implemented using modern web development technologies, Astro and Tailwind.\nAstro Framework:\nThe page leverages Astro to generate static sites and incremental loading, ensuring an efficient user experience. Component modularity facilitates development and maintenance.\nTailwind CSS:\nVisual design is achieved with Tailwind; specific Tailwind classes streamline development, ensuring consistency, and optimizing CSS file size.\nResponsive Video Player:\nProper implementation ensures a responsive video player at the top of the page, adapting to different devices for optimal viewing.\nBento Grid for Bicycle Details:\nA Bento Grid is employed to visually present bicycle details. The layout is achieved using Tailwind components and styles, maintaining aesthetic consistency.\nPerformance Optimization:\nThere is a focus on performance optimization, combining Astro and Tailwind to adhere to best web development practices. The efficient approach improves loading times and enhances the user experience.",
+      link: "https://bikestore.vercel.app/en",
+      github: "https://github.com/francoogilli/astro",
+      image: bikestore,
+      tags: [TAGS.ASTRO, TAGS.TAILWIND],
     },
     {
       title: "Tic Tac Toe",
       description: "Experience the classic Tic Tac Toe game in a modern and interactive way with this web application built using React, JavaScript, and Tailwind CSS. This project showcases my proficiency in front-end development and my ability to create engaging user interfaces. \nKey Features: \nResponsive Design: The Tic Tac Toe game is designed to be fully responsive, ensuring an optimal viewing and playing experience across various devices, including desktops, tablets, and smartphones. \nInteractive Gameplay: Enjoy a seamless and interactive gaming experience. Users can make their moves by simply clicking on the desired grid cell, with real-time updates reflecting the game state. \nState Management with React: Leveraging the power of React, the application efficiently manages the game state, ensuring a dynamic and reactive interface. React components are employed to modularize the codebase, promoting maintainability and scalability. \nStylish UI with Tailwind CSS: The user interface is crafted with the help of Tailwind CSS, a utility-first CSS framework. The result is a visually appealing and modern design that enhances the overall user experience. \nWinning Logic: The application incorporates winning logic to determine the winner of each game. When a player achieves victory, the app visually highlights the winning combination, providing a clear indication of the result.",
       link: "https://tres-enraya.vercel.app/",
       github: "https://github.com/francoogilli/Tic-Tac-Toe",
-      image: ticTacToeImage,
+      image: ticTacToe,
       tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.JAVASCRIPT],
+    },
+    {
+      title: "Weather App",
+      description: "The Weather App delivers precise and up-to-date weather information with detailed forecasts and highlights of the day. It also has a forecast for the day and week. \nQuick Search: Enter a place name and get instant results with our search function. Select your desired location and access accurate forecasts.\nIntuitive Visualization: The sleek and modern user interface offers you a pleasant visual experience. From weather icons to graphs, the app presents information clearly and concisely.\nDetailed Forecasts: Plan your day or week with accurate and detailed forecasts. Switch between hourly view and 5-day view with a single click for specific information.\nHighlights of the Day: Discover essential data of the day, such as wind chill, wind speed, highs and lows, humidity and atmospheric pressure, all presented in a clear and concise manner.",
+      link: "https://francogilli-weatherapp.netlify.app/#/",
+      github: "https://github.com/francoogilli/WeatherApp",
+      image: weatherApp,
+      tags: [TAGS.VUE, TAGS.JAVASCRIPT, TAGS.API, TAGS.CSS],
     }
+    
   ];
   
   export { PROJECTS }; 

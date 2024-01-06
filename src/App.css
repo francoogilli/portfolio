@@ -196,3 +196,8 @@ body::before {
       backdrop-filter: blur(12px);
     }
   }
+
+  html {
+    font-family: "Onest Variable", system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }

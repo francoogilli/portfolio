@@ -27,6 +27,15 @@ const Header = () => {
     };
   }, [isMenuOpen]);
 
+    const handleLinkClick = () => {
+    setMenuOpen(false);
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (mobileMenu) {
+      mobileMenu.classList.add("hidden");
+      mobileMenu.classList.remove("flex");
+    }
+  };
+
   return (
     <header id="header-nav" className="fixed top-0 z-50 w-full px-6 sm:py-2 py-2.5 ">
       <div className="mx-auto flex max-w-7xl items-center justify-between">
@@ -61,7 +70,7 @@ const Header = () => {
         className="bg-black/90 font-semibold text-white backdrop-blur-3xl hidden w-full flex-col items-center text-center text-2xl fixed top-0 left-0 right-0 h-screen place-content-center"
       >
         {links.map((link) => (
-          <a className="my-4" href={link.hash} key={link.hash}>{link.name}</a>
+          <a className="my-4" href={link.hash} key={link.hash} onClick={handleLinkClick}>{link.name}</a>
         ))}
         
       </nav>

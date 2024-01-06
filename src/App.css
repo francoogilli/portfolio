@@ -27,19 +27,11 @@ body::before {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  animation: rotateBackground 200s linear infinite;
 }
 
-/* Resto de tu CSS existente */
 
-@keyframes rotateBackground {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
 
 *{
     margin: 0%;
@@ -124,7 +116,7 @@ body::before {
     position: relative;
 }
 .genButton.secondary {
-  background: transparent; /* Cambia los colores del fondo según tu preferencia */
+  background: transparent; 
 }
 
 .genButton::before{
@@ -189,60 +181,4 @@ body::before {
     transform: scale(1.1);
   } 
 
-/* Add this to your App.css or create a new CSS file */
-.projects-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1150px; /* Set a maximum width for the container */
-  margin: 0 auto; /* Center the container on the page */
-}
 
-/* Add a style for each individual Project component inside the projects-container */
-.projects-container .project {
-  /* Add any additional styling for individual projects here */
-  margin-bottom: 20px;
-}
-
-/* Agrega estos estilos a tu hoja de estilos CSS */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-
-.modal-content {
-  background: #fff;
-  padding: 20px;
-  max-width: 80%;
-  max-height: 80%;
-  overflow: auto;
-  position: relative;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  font-size: 16px;
-  color: #333;
-}
-
-.modal-links {
-  margin-top: 20px;
-}
-
-.modal-links a {
-  display: block;
-  margin-bottom: 10px;
-}

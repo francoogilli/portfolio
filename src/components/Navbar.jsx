@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Close from "../icons/Close";
 import Menu from "../icons/Menu";
+import { links } from '../lib/data';
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -36,21 +37,9 @@ const Header = () => {
 
         {/* Menú de navegación para pantallas grandes */}
         <nav className="hidden md:flex flex-grow basis-0 items-center font-semibold text-white w-full gap-x-2 text-sm md:justify-center">
-          <a className="bg-transparent px-4 py-2 rounded-full" href="#">
-            Home
-          </a>
-          <a className="bg-transparent px-4 py-2 rounded-full" href="#">
-            About
-          </a>
-          <a className="bg-transparent px-4 py-2 rounded-full" href="#">
-            Skills
-          </a>
-          <a className="bg-transparent px-4 py-2 rounded-full" href="#">
-            Projects
-          </a>
-          <a className="bg-transparent px-4 py-2 rounded-full" href="#">
-            Contact
-          </a>
+          {links.map((link) => (
+            <a className="px-4 py-2 rounded-full" href={link.hash} key={link.hash}>{link.name}</a>
+          ))}
         </nav>
 
         {/* Botón de menú para pantallas pequeñas */}
@@ -71,21 +60,9 @@ const Header = () => {
         id="mobile-menu"
         className="bg-black/90 font-semibold text-white backdrop-blur-3xl hidden w-full flex-col items-center text-center text-2xl fixed top-0 left-0 right-0 h-screen place-content-center"
       >
-        <a className="my-4" href="#">
-          Home
-        </a>
-        <a className="my-4" href="#">
-          About
-        </a>
-        <a className="my-4" href="#">
-          Skills
-        </a>
-        <a className="my-4" href="#">
-            Projects
-        </a>
-        <a className="my-4" href="#">
-            Contact
-        </a>
+        {links.map((link) => (
+          <a className="my-4" href={link.hash} key={link.hash}>{link.name}</a>
+        ))}
         
       </nav>
     </header>

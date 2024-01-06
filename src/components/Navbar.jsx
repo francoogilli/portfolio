@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Menu from "../icons/Menu";
+
 const Header = () => {
 
   useEffect(() => {

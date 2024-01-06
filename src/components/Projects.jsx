@@ -5,6 +5,7 @@ import SectionContainer from "./SectionContainer";
 import Brackets from '../icons/Brackets';
 import Chevrons from "../icons/ChevronsDown";
 import ChevronsUp from "../icons/ChevronsUp";
+import { motion } from "framer-motion";
 import GitHubIcon from "../icons/GitHubIcon";
 import LiveProjectIcon from "../icons/LiveProjectIcon";
 const Projects = () => {
@@ -14,13 +15,37 @@ const Projects = () => {
     setExpandedProject((prevProject) => (prevProject === title ? null : title));
   };
 
+  const fadeInAnimationVariants = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: (index) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.02 * index,
+        duration: 0.5,  // Ajusta este valor según tus preferencias
+      },
+    }),
+  };
   return (
     <>
       <SectionContainer id='projects'>
         <h2 className='font-bold text-4xl text-white justify-center gap-3 flex pb-16 items-center pt-16'><Brackets/>Projects</h2>
 
         {PROJECTS.map(({ image, title, description, tags,github,link }) => (
-          <article key={title} className="mb-36 ">
+          <motion.article 
+            key={title} className="mb-36"
+            variants={fadeInAnimationVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            custom={title}
+
+          >
             
             <h3 className="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
             <div className={`text-lg text-white mb-0 text-pretty ${expandedProject === title ? '' : 'line-clamp-2'}`}>
@@ -83,7 +108,7 @@ const Projects = () => {
                   <LiveProjectIcon />Live Demo
                 </a>
             </div>
-          </article>
+          </motion.article>
         ))}
       </SectionContainer>
     </>

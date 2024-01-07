@@ -46,7 +46,7 @@ const Hero = () => {
     <motion.div id='home' className="hero">
       <motion.div className="content" variants={contentVariants} initial="hidden" animate="visible">
         <motion.span className="title" variants={titleVariants}>Full Stack Web Developer</motion.span>
-        <motion.h1 variants={subtitleVariants}>Hello, I'm <span>Franco</span></motion.h1>
+        <motion.h1 className='text-white font-black text-[5rem] sm:text-[5.8rem] leading-tight' variants={subtitleVariants}>Hello, I'm <span>Franco</span></motion.h1>
         <motion.p className='text-gray-300' variants={subtitleVariants}>
           My name is <span className='font-medium'>Franco Gilli</span>, residing in <span className="font-semibold">San Francisco, Córdoba, Argentina</span>.
           I have a strong passion for technology and computing, with a specialization in <span className='italic font-medium'>Web Development</span> within the IT field.

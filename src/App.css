@@ -64,12 +64,7 @@ body::before {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.content h1{
-  font-size: 5.8rem;
-  line-height: 1.2;
-  color: #fff;
-  font-weight: 900;
-}
+
 .content p{
     
     width: 88%;

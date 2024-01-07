@@ -120,7 +120,7 @@ const Header = () => {
       >
         {links.map((link) => (
           <a
-            className="my-4"
+            className={`my-4 px-4 py-1 rounded-full ${link.hash === activeSection ? "bg-white/20" : ""}`}
             href={link.hash}
             key={link.hash}
             onClick={() => handleLinkClick(link.hash)}

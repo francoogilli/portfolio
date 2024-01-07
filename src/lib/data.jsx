@@ -1,7 +1,7 @@
 import weatherApp from '../assets/img/weather.webp';
 import ecommerceApp from '../assets/img/ecommerce.webp';
 import ticTacToe from '../assets/img/tic-tac-toe.webp';
-import bikestore from '../assets/img/bikestore.webp';
+import bikestore from '../assets/img/bikestore2.webp';
 
 const links = [
   {

@@ -5,6 +5,8 @@ import { links } from '../lib/data';
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+  const [isMenuInteracted, setMenuInteracted] = useState(false);
 
   useEffect(() => {
     const menuToggle = document.getElementById("menu-toggle");
@@ -27,13 +29,52 @@ const Header = () => {
     };
   }, [isMenuOpen]);
 
-    const handleLinkClick = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!isMenuInteracted) {
+        const scrollPosition = window.scrollY;
+
+        // Iterar sobre las secciones y determinar cuál está visible
+        for (const link of links) {
+          const sectionElement = document.getElementById(link.hash.substring(1));
+
+          if (sectionElement) {
+            const sectionTop = sectionElement.offsetTop - 200; // Ajuste para mejor detección
+            const sectionBottom = sectionTop + sectionElement.offsetHeight;
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+              setActiveSection(link.hash);
+              break;
+            }
+          }
+        }
+      }
+    };
+
+    // Escuchar el evento de desplazamiento
+    window.addEventListener("scroll", handleScroll);
+
+    // Eliminar el listener al desmontar el componente
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isMenuInteracted]);
+
+  const handleLinkClick = (linkHash) => {
     setMenuOpen(false);
+    setActiveSection(linkHash);
+    setMenuInteracted(true);
+
     const mobileMenu = document.getElementById("mobile-menu");
     if (mobileMenu) {
       mobileMenu.classList.add("hidden");
       mobileMenu.classList.remove("flex");
     }
+
+    // Restablecer isMenuInteracted después de 500ms (ajusta el tiempo según sea necesario)
+    setTimeout(() => {
+      setMenuInteracted(false);
+    }, 500);
   };
 
   return (
@@ -41,13 +82,21 @@ const Header = () => {
       <div className="mx-auto flex max-w-7xl items-center justify-between">
         <div className="flex flex-grow basis-0">
           <a href="/">
+            {/* Contenido del logo */}
           </a>
         </div>
 
         {/* Menú de navegación para pantallas grandes */}
-        <nav className="hidden md:flex flex-grow basis-0 items-center font-semibold text-white w-full gap-x-2 text-sm md:justify-center">
+        <nav className="hidden md:flex flex-grow basis-0 items-center font-semibold  w-full gap-x-2 text-sm md:justify-center">
           {links.map((link) => (
-            <a className="px-4 py-2 rounded-full" href={link.hash} key={link.hash}>{link.name}</a>
+            <a
+              className={`px-4 py-2 text-white rounded-full ${link.hash === activeSection ? "bg-white/10" : ""}`}
+              href={link.hash}
+              key={link.hash}
+              onClick={() => handleLinkClick(link.hash)}
+            >
+              {link.name}
+            </a>
           ))}
         </nav>
 
@@ -70,9 +119,15 @@ const Header = () => {
         className="bg-black/90 font-semibold text-white backdrop-blur-3xl hidden w-full flex-col items-center text-center text-2xl fixed top-0 left-0 right-0 h-screen place-content-center"
       >
         {links.map((link) => (
-          <a className="my-4" href={link.hash} key={link.hash} onClick={handleLinkClick}>{link.name}</a>
+          <a
+            className="my-4"
+            href={link.hash}
+            key={link.hash}
+            onClick={() => handleLinkClick(link.hash)}
+          >
+            {link.name}
+          </a>
         ))}
-        
       </nav>
     </header>
   );

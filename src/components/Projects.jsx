@@ -25,14 +25,21 @@ const Projects = () => {
       y: 0,
       transition: {
         delay: 0.02 * index,
-        duration: 0.5,  // Ajusta este valor según tus preferencias
+        duration: 0.5,  
       },
     }),
   };
   return (
     <>
       <SectionContainer id='projects'>
-        <h2 className='font-bold text-4xl text-white justify-center gap-3 flex pb-16 items-center pt-16'><Brackets/>Projects</h2>
+        <motion.h2 
+          variants={fadeInAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className='font-bold text-4xl text-white justify-center gap-3 flex pb-16 items-center pt-16'><Brackets/>Projects</motion.h2>
 
         {PROJECTS.map(({ image, title, description, tags,github,link }) => (
           <motion.article 

@@ -14,7 +14,7 @@ function Intro() {
                     alt="Franco Gilli photo" 
                     className="rounded-full  w-24 h-24 mb-6 transition duration-700 ease-in-out hover:scale-110"
                 />
-                <h1 className="text-white text-[2.5rem] md:text-6xl lg:text-7xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+                <h1 className="text-white text-[2.3rem] md:text-6xl lg:text-7xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
                     Hey, I'm Franco
                 </h1>
                 <h2 class="text-xl lg:text-xl text-balance max-w-[700px] text-white">

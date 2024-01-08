@@ -5,7 +5,7 @@ const LinkedInIcon = () => (
   
   width="256"
   height="256"
-  className='w-4 h-4 sm:w-6 sm:h-6 my-1 sm:my-0'
+  className='w-3.5 h-3.5 sm:w-6 sm:h-6 my-1 sm:my-0'
   xmlns="http://www.w3.org/2000/svg"
   preserveAspectRatio="xMidYMid"
   viewBox="0 0 256 256"

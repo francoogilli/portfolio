@@ -7,7 +7,7 @@ const EmailIcon = () => (
   height="24"
   viewBox="0 0 24 24"
   stroke-width="2"
-  className='w-4 h-4 sm:w-6 sm:h-6 my-1 sm:my-0'
+  className='w-3.5 h-3.5 sm:w-6 sm:h-6 my-1 sm:my-0'
   stroke="currentColor"
   fill="none"
   stroke-linecap="round"

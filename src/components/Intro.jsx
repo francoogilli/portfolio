@@ -16,10 +16,9 @@ function Intro() {
     hidden: { y: -200, opacity: 0 },
     visible: { y: 0, opacity: 1, transition: { duration: 0.7, ease: "easeOut" } },
   };
-
-  const scaleIn = {
-    hidden: { scale: 0.8 },
-    visible: { scale: 1, transition: { duration: 0.7, ease: "easeInOut" } },
+  const riseIn = {
+    hidden: { y: 200, opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.4, ease: "easeOut" } },
   };
 
   const slideIn = {
@@ -69,7 +68,7 @@ function Intro() {
             className="bg-white/10 border border-white/10 rounded-full flex
                          justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-[.6875rem] md:text-base 
                          text-white/60 transition hover:scale-110 hover:bg-white/10 hover:text-white"
-            variants={scaleIn}
+            variants={riseIn}
           >
             <LinkedIn />LinkedIn
           </motion.a>
@@ -79,7 +78,7 @@ function Intro() {
             className="bg-white/10 border border-white/10 rounded-full flex
                          justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-[.6875rem] md:text-base 
                          text-white/60 transition hover:scale-110 hover:bg-white/10 hover:text-white"
-            variants={scaleIn}
+            variants={riseIn}
           >
             <Github />GitHub
           </motion.a>
@@ -89,7 +88,7 @@ function Intro() {
             className="bg-white/10 border border-white/10 rounded-full flex
                          justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-[.6875rem] md:text-base 
                          text-white/60 transition hover:scale-110 hover:bg-white/10 hover:text-white"
-            variants={scaleIn}
+            variants={riseIn}
           >
             <Email />francogilli10@gmail.com
           </motion.a>

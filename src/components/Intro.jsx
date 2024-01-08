@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SectionContainer from "./SectionContainer";
-import foto from "../assets/img/midudev2.png";
+import foto from "../assets/img/profile.webp";
 import LinkedIn from "../icons/LinkedIn";
 import Email from "../icons/Email";
 import Github from "../icons/Github";

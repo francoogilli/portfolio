@@ -25,7 +25,7 @@ function Intro() {
                 Full Stack developer</span>. <span class="text-sky-200"> 
                 Specialized in creating unique applications.</span>
                 </h2>
-                <nav class="flex gap-1 sm:gap-4 mt-8 flex-wrap">
+                <nav class="flex gap-1 sm:gap-4 mt-8 flex-wrap justify-center">
                     <a target="_blank" href="https://www.linkedin.com/in/franco-gilli/" className="bg-white/10 border border-white/10 rounded-full flex
                          justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-[.6875rem] md:text-base 
                          text-white/60 transition hover:scale-110 hover:bg-white/10 hover:text-white">

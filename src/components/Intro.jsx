@@ -11,7 +11,6 @@ function Intro() {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   };
-
   const fallIn = {
     hidden: { y: -200, opacity: 0 },
     visible: { y: 0, opacity: 1, transition: { duration: 0.7, ease: "easeOut" } },
@@ -20,7 +19,6 @@ function Intro() {
     hidden: { y: 200, opacity: 0 },
     visible: { y: 0, opacity: 1, transition: { duration: 0.4, ease: "easeOut" } },
   };
-
   const slideIn = {
     hidden: { y: -50, opacity: 0 },
     visible: { y: 0, opacity: 1, transition: { duration: 0.5, ease: "easeInOut" } },
@@ -50,7 +48,7 @@ function Intro() {
           Hey, I'm Franco
         </motion.h1>
         <motion.h2
-          className="text-xl lg:text-xl text-balance max-w-[700px] text-white"
+          className="text-lg lg:text-xl text-balance max-w-[700px] text-white"
           variants={slideIn}
         >
           <span>
@@ -90,7 +88,7 @@ function Intro() {
                          text-white/60 transition hover:scale-110 hover:bg-white/10 hover:text-white"
             variants={riseIn}
           >
-            <Email />francogilli10@gmail.com
+            <Email />Gmail
           </motion.a>
         </nav>
       </SectionContainer>

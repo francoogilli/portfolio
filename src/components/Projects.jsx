@@ -55,7 +55,7 @@ const Projects = () => {
           >
             
             <h3 className="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
-            <div className={`text-lg text-white mb-0 text-pretty ${expandedProject === title ? '' : 'line-clamp-2'}`}>
+            <div className={`text-base sm:text-lg text-white mb-0 text-pretty ${expandedProject === title ? '' : 'line-clamp-2'}`}>
             {description.split('\n').map((line, index) => (
               <React.Fragment key={index}>
                 {line}

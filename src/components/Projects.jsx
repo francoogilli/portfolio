@@ -55,14 +55,20 @@ const Projects = () => {
           >
             
             <h3 className="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
-            <div className={`text-base sm:text-base text-white mb-0 text-pretty ${expandedProject === title ? '' : 'line-clamp-2'}`}>
+            <div className={`text-base sm:text-base text-gray-200 mb-0 text-pretty ${expandedProject === title ? '' : 'line-clamp-2'}`}>
             {description.split('\n').map((line, index) => (
-              <React.Fragment key={index}>
-                {line}
-                <br />
-                <br />
-              </React.Fragment>
-            ))}
+    <React.Fragment key={index}>
+      {line.split(/\*\*(.*?)\*\*/g).map((part, index) => (
+        index % 2 === 1 ? (
+          <span key={index} className="font-semibold">{part}</span>
+        ) : (
+          part
+        )
+      ))}
+      <br />
+      <br />
+    </React.Fragment>
+  ))}
             </div>
             {description.length > 100 && (
               <button

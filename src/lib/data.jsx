@@ -159,22 +159,22 @@ const PROJECTS = [
       tags: [TAGS.ASTRO, TAGS.TAILWIND],
     },
     {
+      title: "Weather App",
+      description: "The Weather App delivers precise and up-to-date weather information with detailed forecasts and highlights of the day. It also has a forecast for the day and week. \nQuick Search: Enter a place name and get instant results with our search function. Select your desired location and access accurate forecasts.\nIntuitive Visualization: The sleek and modern user interface offers you a pleasant visual experience. From weather icons to graphs, the app presents information clearly and concisely.\nDetailed Forecasts: Plan your day or week with accurate and detailed forecasts. Switch between hourly view and 5-day view with a single click for specific information.\nHighlights of the Day: Discover essential data of the day, such as wind chill, wind speed, highs and lows, humidity and atmospheric pressure, all presented in a clear and concise manner.",
+      link: "https://cleansky.vercel.app/",
+      github: "https://github.com/francoogilli/weather",
+      image: weatherApp,
+      tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.TAILWIND],
+    },
+    {
       title: "Tic Tac Toe",
       description: "Experience the classic Tic Tac Toe game in a modern and interactive way with this web application built using React, JavaScript, and Tailwind CSS. This project showcases my proficiency in front-end development and my ability to create engaging user interfaces. \nKey Features: \nResponsive Design: The Tic Tac Toe game is designed to be fully responsive, ensuring an optimal viewing and playing experience across various devices, including desktops, tablets, and smartphones. \nInteractive Gameplay: Enjoy a seamless and interactive gaming experience. Users can make their moves by simply clicking on the desired grid cell, with real-time updates reflecting the game state. \nState Management with React: Leveraging the power of React, the application efficiently manages the game state, ensuring a dynamic and reactive interface. React components are employed to modularize the codebase, promoting maintainability and scalability. \nStylish UI with Tailwind CSS: The user interface is crafted with the help of Tailwind CSS, a utility-first CSS framework. The result is a visually appealing and modern design that enhances the overall user experience. \nWinning Logic: The application incorporates winning logic to determine the winner of each game. When a player achieves victory, the app visually highlights the winning combination, providing a clear indication of the result.",
       link: "https://tres-enraya.vercel.app/",
       github: "https://github.com/francoogilli/Tic-Tac-Toe",
       image: ticTacToe,
       tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.JAVASCRIPT],
-    },
-    {
-      title: "Weather App",
-      description: "The Weather App delivers precise and up-to-date weather information with detailed forecasts and highlights of the day. It also has a forecast for the day and week. \nQuick Search: Enter a place name and get instant results with our search function. Select your desired location and access accurate forecasts.\nIntuitive Visualization: The sleek and modern user interface offers you a pleasant visual experience. From weather icons to graphs, the app presents information clearly and concisely.\nDetailed Forecasts: Plan your day or week with accurate and detailed forecasts. Switch between hourly view and 5-day view with a single click for specific information.\nHighlights of the Day: Discover essential data of the day, such as wind chill, wind speed, highs and lows, humidity and atmospheric pressure, all presented in a clear and concise manner.",
-      link: "https://francogilli-weatherapp.netlify.app/#/",
-      github: "https://github.com/francoogilli/WeatherApp",
-      image: weatherApp,
-      tags: [TAGS.VUE, TAGS.JAVASCRIPT, TAGS.CSS],
     }
-    
+
   ];
   
   export { PROJECTS }; 

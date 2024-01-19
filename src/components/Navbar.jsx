@@ -100,7 +100,7 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* Botón de menú para pantallas pequeñas */}
+        {/* button menu mobile for small screen */}
         <button
           id="menu-toggle"
           className="flex flex-grow text-white basis-0 justify-end text-2xl md:hidden z-50"

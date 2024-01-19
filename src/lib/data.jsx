@@ -13,14 +13,13 @@ const links = [
     hash: "#about",
   },  
   {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
     name: "Projects",
     hash: "#projects",
   },
-
+  {
+    name: "Skills",
+    hash: "#skills",
+  },
   {
     name: "Contact",
     hash: "#contact",

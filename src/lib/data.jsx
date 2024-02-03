@@ -2,7 +2,7 @@ import weatherApp from '../assets/img/weather.webp';
 import ecommerceApp from '../assets/img/ecommerce.webp';
 import ticTacToe from '../assets/img/tic-tac-toe.webp';
 import bikestore from '../assets/img/bikestore2.webp';
-
+import resources from '../assets/img/resource.webp';
 
 const links = [
   {
@@ -148,7 +148,14 @@ const TAGS ={
 export { TAGS };
 
 const PROJECTS = [
-    
+    {
+      title:"Resources Dev - A developer resource library",
+      description:"It is a resource website for developers, the page has resources from Frontend to Backend and Testing, it also has Visual Studio Code resources, as well as themes and extensions.",
+      link: "https://resourcesdev.vercel.app/",
+      github: "https://github.com/francoogilli/devresources",
+      image: resources,
+      tags: [TAGS.NEXTJS, TAGS.TYPESCRIPT, TAGS.TAILWIND],
+    },
     {
       title: "Ecommerce - Sports clothing store",
       description:"An online haven for sports enthusiasts, our E-commerce Sports Clothing Store seamlessly blends style and performance, delivering a diverse range of athletic apparel .\n **Web description:** In this development project, he created a sportswear commerce website, using the power of Next.js 14, Stripe, and Sanity.io. \n **Featured Technologies:** Next.js 14: The latest version of Next.js provides optimized performance, cleaner code structure, and faster navigation. I took advantage of the latest features of Next.js to build a modern and efficient website. \n **Sanity.io:** I used Sanity.io as a flexible and powerful CMS (Content Management System). This makes it easier to manage and update products, categories and content in general, providing efficient administration of the online store. \n **Highlighted features:** Intuitive User Interface: I designed an intuitive and attractive user interface to provide a pleasant shopping experience. Easy navigation and carefully structured pages allow users to find and explore products with ease.\n **Efficient Content Management:** Using Sanity.io, content management becomes efficient and accessible. Store owners can easily update product details, images and categories without requiring technical knowledge.",

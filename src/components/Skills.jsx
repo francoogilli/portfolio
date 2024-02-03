@@ -32,7 +32,7 @@ function Skills({}) {
       <ul className="flex flex-wrap justify-center gap-1 text-lg text-gray-800">
 
         {skillsData.map((skill, index) => (
-        <motion.span
+        <motion.li
               key={index}
               className={`text-white bg-white/5 border border-white/10 rounded-full inline-block mx-1 md:mx-1 py-1.5 px-2.5 md:py-2 md:px-4 text-xs md:text-sm transition hover:bg-white/10 mb-2 cursor-pointer`}
               variants={fadeInAnimationVariants}
@@ -48,7 +48,7 @@ function Skills({}) {
       ) : (
         skill
       )}
-          </motion.span>
+          </motion.li>
         ))}
       </ul>
     </section>

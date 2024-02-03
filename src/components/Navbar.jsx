@@ -81,9 +81,7 @@ const Header = () => {
     <header id="header-nav" className="fixed top-0 z-50 w-full px-6 sm:py-2 py-2.5 ">
       <div className="mx-auto flex max-w-7xl items-center justify-between">
         <div className="flex flex-grow basis-0">
-          <a href="/">
-            {/* Contenido del logo */}
-          </a>
+          
         </div>
 
         {/* Menú de navegación para pantallas grandes */}
@@ -104,6 +102,7 @@ const Header = () => {
         <button
           id="menu-toggle"
           className="flex flex-grow text-white basis-0 justify-end text-2xl md:hidden z-50"
+          aria-label="Toggle Menu"
         >
           <span id="menu-icon">{isMenuOpen ? <Close /> : <Menu />}</span>
         </button>

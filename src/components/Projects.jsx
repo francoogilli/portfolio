@@ -81,7 +81,7 @@ const Projects = () => {
             )}
             <ul className="flex gap-x-1 flex-row mb-3 pt-4">
               {tags.map((tech, index) => (
-                <span
+                <li
                   key={index}
                   className={`text-white bg-white/5 
                         border border-white/10 rounded-full
@@ -96,7 +96,7 @@ const Projects = () => {
                   ) : (
                     tech
                   )}
-                </span>
+                </li>
               ))}
             </ul>
             <img

@@ -150,16 +150,16 @@ export { TAGS };
 
 const PROJECTS = [
     {
-      title:"Dona 3D - Impresion 3D",
-      description:"It is a 3D App where you can see your favorite 3D models, you can also share them with your friends.",
+      title:"Dona 3D - Empresa de impresion 3D",
+      description:"Sitio web para una empresa de Impresion 3D,a su vez el sitio cuenta con una landing page y hace un recorrido sobre los distintos servicios que ofrece la empresa. \nTambien cuenta con una galeria de los productos que ofrece la empresa, asi como una seccion de Contacto en la cual el cliente puede contactarse directamente atraves de un formulario.",
       link: "https://dona3d.vercel.app/",
       github: "https://github.com/francoogilli/dona3d",
       image: dona3d,
       tags: [TAGS.NEXTJS, TAGS.TYPESCRIPT, TAGS.TAILWIND],
     },
     {
-      title:"Resources Dev - A developer resource library",
-      description:"It is a resource website for developers, the page has resources from Frontend to Backend and Testing, it also has Visual Studio Code resources, as well as themes and extensions.",
+      title:"Resources Dev - Recursos para desarrolladores",
+      description:"Es un sitio web de recursos para desarrolladores, la página tiene recursos desde Frontend hasta Backend y Testing, también cuenta con recursos de Visual Studio Code, así como temas y extensiones.",
       link: "https://resourcesdev.vercel.app/",
       github: "https://github.com/francoogilli/devresources",
       image: resources,
@@ -167,15 +167,15 @@ const PROJECTS = [
     },
     {
       title: "Weather App",
-      description: "The Weather App delivers precise and up-to-date weather information with detailed forecasts and highlights of the day. It also has a forecast for the day and week. \n **Quick Search:** Enter a place name and get instant results with our search function. Select your desired location and access accurate forecasts.\n **Intuitive Visualization:** The sleek and modern user interface offers you a pleasant visual experience. From weather icons to details cards, the app presents information clearly and concisely.\n **Detailed Forecasts:** Plan your day or week with accurate and detailed forecasts. Switch between hourly view and 15-days view with a single click for specific information.\n **Highlights of the Day:** Discover essential data of the day, such as UV index, wind speed, visibility, humidity and atmospheric pressure, all presented in a clear and concise manner. \n **Note:** The weather icons are from **@josein_bagheri** and the inspiration for the forecast and data cards are from **@aksonvady**.",
+      description: "La aplicación del tiempo ofrece información precisa y actualizada sobre el clima con pronósticos detallados y destacados del día. También cuenta con un pronóstico para el día y la semana. \n **Búsqueda Rápida:** Ingresa un nombre de lugar y obtén resultados instantáneos con nuestra función de búsqueda. Selecciona tu ubicación deseada y accede a pronósticos precisos. \n **Visualización Intuitiva:** La interfaz de usuario elegante y moderna te ofrece una experiencia visual agradable. Desde iconos meteorológicos hasta tarjetas de detalles, la aplicación presenta la información de manera clara y concisa. \n **Pronósticos Detallados:** Planifica tu día o semana con pronósticos precisos y detallados. Cambia entre la vista por hora y la vista de 15 días con un solo clic para obtener información específica. \n **Destacados del Día:** Descubre datos esenciales del día, como el índice UV, la velocidad del viento, la visibilidad, la humedad y la presión atmosférica, todo presentado de manera clara y concisa. \n **Nota:** Los iconos del tiempo son de **@josein_bagheri** y la inspiración para los pronósticos y las tarjetas de datos provienen de **@aksonvady**.",
       link: "https://cleansky.vercel.app/",
       github: "https://github.com/francoogilli/weather",
       image: weatherApp,
       tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.TAILWIND],
     },
     {
-      title: "Ecommerce - Sports clothing store",
-      description:"An online haven for sports enthusiasts, our E-commerce Sports Clothing Store seamlessly blends style and performance, delivering a diverse range of athletic apparel .\n **Web description:** In this development project, he created a sportswear commerce website, using the power of Next.js 14, Stripe, and Sanity.io. \n **Featured Technologies:** Next.js 14: The latest version of Next.js provides optimized performance, cleaner code structure, and faster navigation. I took advantage of the latest features of Next.js to build a modern and efficient website. \n **Sanity.io:** I used Sanity.io as a flexible and powerful CMS (Content Management System). This makes it easier to manage and update products, categories and content in general, providing efficient administration of the online store. \n **Highlighted features:** Intuitive User Interface: I designed an intuitive and attractive user interface to provide a pleasant shopping experience. Easy navigation and carefully structured pages allow users to find and explore products with ease.\n **Efficient Content Management:** Using Sanity.io, content management becomes efficient and accessible. Store owners can easily update product details, images and categories without requiring technical knowledge.",
+      title: "Ecommerce - Tienda de ropa deportiva",
+      description: "Un refugio en línea para los entusiastas del deporte, nuestra Tienda de Ropa Deportiva de Comercio Electrónico combina perfectamente estilo y rendimiento, ofreciendo una amplia gama de ropa deportiva.\n **Descripción web:** En este proyecto de desarrollo, se creó un sitio web de comercio de ropa deportiva, utilizando el poder de Next.js 14, Stripe y Sanity.io. \n **Tecnologías Destacadas:** Next.js 14: La última versión de Next.js proporciona un rendimiento optimizado, una estructura de código más limpia y una navegación más rápida. Aproveché las últimas características de Next.js para construir un sitio web moderno y eficiente. \n **Sanity.io:** Utilicé Sanity.io como un CMS (Sistema de Gestión de Contenidos) flexible y potente. Esto facilita la gestión y actualización de productos, categorías y contenido en general, proporcionando una administración eficiente de la tienda en línea. \n **Características Destacadas:** Interfaz de Usuario Intuitiva: Diseñé una interfaz de usuario intuitiva y atractiva para ofrecer una experiencia de compra agradable. La navegación fácil y las páginas cuidadosamente estructuradas permiten a los usuarios encontrar y explorar productos con facilidad. \n **Gestión de Contenidos Eficiente:** Utilizando Sanity.io, la gestión de contenidos se vuelve eficiente y accesible. Los propietarios de tiendas pueden actualizar fácilmente los detalles del producto, las imágenes y las categorías sin necesidad de conocimientos técnicos.",
       link: "https://ecommerce-fg.vercel.app/",
       github: "https://github.com/francoogilli/ecommerce-nextjs",
       image: ecommerceApp,
@@ -183,7 +183,7 @@ const PROJECTS = [
     },
     {
       title: "Bike Store",
-      description: "The page is a showcase of the **Siroko Sidney** bicycle, implemented using modern web development technologies, Astro and Tailwind.\n**Astro Framework:** The page leverages Astro to generate static sites and incremental loading, ensuring an efficient user experience. Component modularity facilitates development and maintenance.\n **Tailwind CSS:** Visual design is achieved with Tailwind; specific Tailwind classes streamline development, ensuring consistency, and optimizing CSS file size.\n **Responsive Video Player:** Proper implementation ensures a responsive video player at the top of the page, adapting to different devices for optimal viewing.\n **Bento Grid for Bicycle Details:** A Bento Grid is employed to visually present bicycle details. The layout is achieved using Tailwind components and styles, maintaining aesthetic consistency.\n **Performance Optimization:** There is a focus on performance optimization, combining Astro and Tailwind to adhere to best web development practices. The efficient approach improves loading times and enhances the user experience.",
+      description: "La página es una exhibición de la bicicleta **Siroko Sidney**, implementada utilizando tecnologías modernas de desarrollo web, Astro y Tailwind.\n **Astro Framework:** La página aprovecha Astro para generar sitios estáticos y carga incremental, asegurando una experiencia de usuario eficiente. La modularidad de componentes facilita el desarrollo y el mantenimiento. \n **Tailwind CSS:** El diseño visual se logra con Tailwind; clases específicas de Tailwind agilizan el desarrollo, asegurando consistencia y optimizando el tamaño del archivo CSS. \n **Reproductor de Video Responsivo:** La implementación adecuada garantiza un reproductor de video responsive en la parte superior de la página, adaptándose a diferentes dispositivos para una visualización óptima. \n **Bento Grid para Detalles de la Bicicleta:** Se emplea un Bento Grid para presentar visualmente los detalles de la bicicleta. El diseño se logra utilizando componentes y estilos de Tailwind, manteniendo consistencia estética. \n **Optimización del Rendimiento:** Se hace hincapié en la optimización del rendimiento, combinando Astro y Tailwind para adherirse a las mejores prácticas de desarrollo web. El enfoque eficiente mejora los tiempos de carga y realza la experiencia del usuario.",
       link: "https://bikestore.vercel.app/en",
       github: "https://github.com/francoogilli/astro",
       image: bikestore,

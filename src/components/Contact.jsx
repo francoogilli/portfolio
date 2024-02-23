@@ -72,7 +72,7 @@ const Contact = () => {
 
   return (
     <>
-    <h2 className='font-bold text-4xl text-white justify-center gap-3 flex pb-3 items-center pt-7'><EmailIcon/>Contact</h2>
+    <h2 className='font-bold text-4xl text-white justify-center gap-3 flex pb-3 items-center pt-7'><EmailIcon/>Contacto</h2>
     <section id="contact" className="bg-[#14181a] rounded-3xl mb-7 mx-5 mt-3 max-w-[40rem] lg:mx-auto scroll-mt-28 sm:mb-4 ">
       <motion.div className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
         <div className="flex flex-col gap-4">

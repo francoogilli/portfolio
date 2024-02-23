@@ -39,7 +39,7 @@ const Projects = () => {
           viewport={{
             once: true,
           }}
-          className='font-bold text-4xl text-white justify-center gap-3 flex pb-16 items-center pt-16'><Brackets/>Projects</motion.h2>
+          className='font-bold text-4xl text-white justify-center gap-3 flex pb-16 items-center pt-16'><Brackets/>Proyectos</motion.h2>
 
         {PROJECTS.map(({ image, title, description, tags,github,link }) => (
           <motion.article 
@@ -111,14 +111,14 @@ const Projects = () => {
                   className="text-white flex justify-center items-center bg-white/5 border border-white/10 rounded-full gap-2 mx-1 md:mx-1 py-1 px-2 md:py-2 md:px-4 text-xs md:text-sm transition-all duration-200 hover:scale-110 hover:bg-white/10 mb-2 cursor-pointer"
                   target="_blank"
                 >
-                  <GitHubIcon />Source Code
+                  <GitHubIcon />Codigo
                 </a>
                 <a 
                   href={link} 
                   className="text-white flex justify-center items-center bg-white/5 border border-white/10 rounded-full gap-2 mx-1 md:mx-1 py-1 px-2 md:py-2 md:px-4 text-xs md:text-sm transition-all duration-200 hover:scale-110 hover:bg-white/10  mb-2 cursor-pointer"
                   target="_blank"  
                 >
-                  <LiveProjectIcon />Live Demo
+                  <LiveProjectIcon />Website
                 </a>
             </div>
           </motion.article>

@@ -45,19 +45,19 @@ function Intro() {
           className="text-white text-[2.3rem] md:text-6xl lg:text-7xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
           variants={slideIn}
         >
-          Hey, I'm Franco
+          Hey, soy Franco
         </motion.h1>
         <motion.h2
           className="text-lg lg:text-xl text-balance max-w-[700px] text-white"
           variants={slideIn}
         >
           <span>
-            My name is <span className="font-medium">Franco Gilli</span>,
-            residing in{" "}
+            Mi nombre es <span className="font-medium">Franco Gilli</span>,
+            vivo en{" "}
           </span>
           <span class="text-red-200">San Francisco, Córdoba, Argentina</span>.{" "}
           <span class="text-yellow-200">Full Stack developer</span>.{" "}
-          <span class="text-sky-200">Specialized in creating unique applications.</span>
+          <span class="text-sky-200">Especializado en crear aplicaciones únicas.</span>
         </motion.h2>
         <nav class="flex gap-1 sm:gap-4 mt-8 flex-wrap justify-center">
           <motion.a

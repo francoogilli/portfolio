@@ -15,7 +15,7 @@ const fadeInAnimationVariants = {
       },
     }),
   };
-function About({ }) {
+  function About({ }) {
     
     return(
         <section
@@ -29,7 +29,7 @@ function About({ }) {
                 viewport={{
                   once: true,
                 }}
-            className='font-bold text-4xl text-white justify-center gap-3 flex pb-7 items-center pt-15'><><User/></>About me</motion.h2>
+            className='font-bold text-4xl text-white justify-center gap-3 flex pb-7 items-center pt-15'><><User/></>Perfil</motion.h2>
             <motion.p 
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -38,15 +38,7 @@ function About({ }) {
               once: true,
             }}
             className=" text-gray-300">
-                After completing{" "}
-                <span className="font-medium">Secondary School</span>, I decided to follow my passion for programming.
-                I enrolled in a Programming Technician career, where I delved into the world of{" "}
-                <span className="font-medium">Web Development</span>.{" "}
-                <span className="italic">My favorite part of programming</span> is the
-                problem-solving aspect. I love the
-                feeling of finally figuring out a solution to a problem. My tech stack encompasses both{" "}
-                <span className="font-medium">Frontend</span> and <span className="font-medium">Backend</span>,
-                and I've applied the MVC architecture pattern in .NET, integrating external APIs and databases. 
+                Después de completar la escuela Secundaria, decidí seguir mi pasión por la programación. Me inscribí en la carrera de <span className='font-semibold'>Técnico en Programación</span>, donde profundicé en el mundo del <span className="font-semibold">Desarrollo Web</span>. <span className="italic">Mi parte favorita de la programación</span> es el aspecto de resolución de problemas. Me encanta la sensación de finalmente encontrar una solución a un problema. Mi conjunto de tecnologías abarca tanto el <span className="font-medium">Frontend</span> como el <span className="font-medium">Backend</span>, y he aplicado el patrón de arquitectura MVC en .NET, integrando APIs externas y bases de datos.
             </motion.p>
             <motion.p
              variants={fadeInAnimationVariants}
@@ -56,8 +48,7 @@ function About({ }) {
                once: true,
              }}
              className='mt-3 text-gray-300'>
-                Always eager to acquire new skills. I am currently seeking a{" "}
-                <span className="font-medium">full-time position</span> as a software developer.
+                Siempre ansioso por adquirir nuevas habilidades. Actualmente estoy buscando una posición como <span className='font-semibold'>desarrollador</span> de software.
             </motion.p>
         </section>
     );

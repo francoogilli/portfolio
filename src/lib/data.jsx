@@ -11,11 +11,7 @@ const links = [
     hash: "#home",
   },
   {
-    name: "About",
-    hash: "#about",
-  },  
-  {
-    name: "Projects",
+    name: "Proyectos",
     hash: "#projects",
   },
   {
@@ -23,7 +19,11 @@ const links = [
     hash: "#skills",
   },
   {
-    name: "Contact",
+    name: "Perfil",
+    hash: "#about",
+  },
+  {
+    name: "Contacto",
     hash: "#contact",
   },
 ];
@@ -166,6 +166,14 @@ const PROJECTS = [
       tags: [TAGS.NEXTJS, TAGS.TYPESCRIPT, TAGS.TAILWIND],
     },
     {
+      title: "Weather App",
+      description: "The Weather App delivers precise and up-to-date weather information with detailed forecasts and highlights of the day. It also has a forecast for the day and week. \n **Quick Search:** Enter a place name and get instant results with our search function. Select your desired location and access accurate forecasts.\n **Intuitive Visualization:** The sleek and modern user interface offers you a pleasant visual experience. From weather icons to details cards, the app presents information clearly and concisely.\n **Detailed Forecasts:** Plan your day or week with accurate and detailed forecasts. Switch between hourly view and 15-days view with a single click for specific information.\n **Highlights of the Day:** Discover essential data of the day, such as UV index, wind speed, visibility, humidity and atmospheric pressure, all presented in a clear and concise manner. \n **Note:** The weather icons are from **@josein_bagheri** and the inspiration for the forecast and data cards are from **@aksonvady**.",
+      link: "https://cleansky.vercel.app/",
+      github: "https://github.com/francoogilli/weather",
+      image: weatherApp,
+      tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.TAILWIND],
+    },
+    {
       title: "Ecommerce - Sports clothing store",
       description:"An online haven for sports enthusiasts, our E-commerce Sports Clothing Store seamlessly blends style and performance, delivering a diverse range of athletic apparel .\n **Web description:** In this development project, he created a sportswear commerce website, using the power of Next.js 14, Stripe, and Sanity.io. \n **Featured Technologies:** Next.js 14: The latest version of Next.js provides optimized performance, cleaner code structure, and faster navigation. I took advantage of the latest features of Next.js to build a modern and efficient website. \n **Sanity.io:** I used Sanity.io as a flexible and powerful CMS (Content Management System). This makes it easier to manage and update products, categories and content in general, providing efficient administration of the online store. \n **Highlighted features:** Intuitive User Interface: I designed an intuitive and attractive user interface to provide a pleasant shopping experience. Easy navigation and carefully structured pages allow users to find and explore products with ease.\n **Efficient Content Management:** Using Sanity.io, content management becomes efficient and accessible. Store owners can easily update product details, images and categories without requiring technical knowledge.",
       link: "https://ecommerce-fg.vercel.app/",
@@ -180,22 +188,6 @@ const PROJECTS = [
       github: "https://github.com/francoogilli/astro",
       image: bikestore,
       tags: [TAGS.ASTRO, TAGS.TAILWIND],
-    },
-    {
-      title: "Weather App",
-      description: "The Weather App delivers precise and up-to-date weather information with detailed forecasts and highlights of the day. It also has a forecast for the day and week. \n **Quick Search:** Enter a place name and get instant results with our search function. Select your desired location and access accurate forecasts.\n **Intuitive Visualization:** The sleek and modern user interface offers you a pleasant visual experience. From weather icons to details cards, the app presents information clearly and concisely.\n **Detailed Forecasts:** Plan your day or week with accurate and detailed forecasts. Switch between hourly view and 15-days view with a single click for specific information.\n **Highlights of the Day:** Discover essential data of the day, such as UV index, wind speed, visibility, humidity and atmospheric pressure, all presented in a clear and concise manner. \n **Note:** The weather icons are from **@josein_bagheri** and the inspiration for the forecast and data cards are from **@aksonvady**.",
-      link: "https://cleansky.vercel.app/",
-      github: "https://github.com/francoogilli/weather",
-      image: weatherApp,
-      tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.TAILWIND],
-    },
-    {
-      title: "Tic Tac Toe",
-      description: "Experience the classic **Tic Tac Toe** game in a modern and interactive way with this web application built using React, JavaScript, and Tailwind CSS. This project showcases my proficiency in front-end development and my ability to create engaging user interfaces. \n **Key Features:** \n **Responsive Design:** The Tic Tac Toe game is designed to be fully responsive, ensuring an optimal viewing and playing experience across various devices, including desktops, tablets, and smartphones. \n **Interactive Gameplay:** Enjoy a seamless and interactive gaming experience. Users can make their moves by simply clicking on the desired grid cell, with real-time updates reflecting the game state. \n **State Management with React:** Leveraging the power of React, the application efficiently manages the game state, ensuring a dynamic and reactive interface. React components are employed to modularize the codebase, promoting maintainability and scalability. \n **Stylish UI with Tailwind CSS:** The user interface is crafted with the help of Tailwind CSS, a utility-first CSS framework. The result is a visually appealing and modern design that enhances the overall user experience.",
-      link: "https://tres-enraya.vercel.app/",
-      github: "https://github.com/francoogilli/Tic-Tac-Toe",
-      image: ticTacToe,
-      tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.JAVASCRIPT],
     }
 
   ];

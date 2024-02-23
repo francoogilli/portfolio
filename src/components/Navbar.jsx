@@ -85,7 +85,7 @@ const Header = () => {
         </div>
 
         {/* Menú de navegación para pantallas grandes */}
-        <nav className="hidden md:flex flex-grow basis-0 items-center font-semibold  w-full gap-x-2 text-sm md:justify-center">
+        <nav className="hidden md:flex md:items-center flex-grow basis-0 items-center font-semibold  w-full gap-x-2 text-sm md:justify-center">
           {links.map((link) => (
             <a
               className={`px-4 py-2 text-white rounded-full ${link.hash === activeSection ? "bg-white/10" : ""}`}

@@ -2,6 +2,7 @@ import weatherApp from '../assets/img/weather.webp';
 import ecommerceApp from '../assets/img/ecommerce.webp';
 import ticTacToe from '../assets/img/tic-tac-toe.webp';
 import bikestore from '../assets/img/bikestore2.webp';
+import dona3d from '../assets/img/a1.png';
 import resources from '../assets/img/resource.webp';
 
 const links = [
@@ -148,6 +149,14 @@ const TAGS ={
 export { TAGS };
 
 const PROJECTS = [
+    {
+      title:"Dona 3D - Impresion 3D",
+      description:"It is a 3D App where you can see your favorite 3D models, you can also share them with your friends.",
+      link: "https://dona3d.vercel.app/",
+      github: "https://github.com/francoogilli/dona3d",
+      image: dona3d,
+      tags: [TAGS.NEXTJS, TAGS.TYPESCRIPT, TAGS.TAILWIND],
+    },
     {
       title:"Resources Dev - A developer resource library",
       description:"It is a resource website for developers, the page has resources from Frontend to Backend and Testing, it also has Visual Studio Code resources, as well as themes and extensions.",

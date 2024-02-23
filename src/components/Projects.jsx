@@ -99,12 +99,14 @@ const Projects = () => {
                 </li>
               ))}
             </ul>
-            <img
-              loading="lazy"
-              className="rounded-xl shadow-2xl shadow-white/10 aspect-video"
-              src={image}
-              alt={`Captura de pantalla del proyecto ${image}`}
-            />
+            <div className="rounded-xl overflow-clip">
+              <img
+                loading="lazy"
+                className="rounded-xl hover:scale-105 transition-transform duration-500 shadow-2xl shadow-white/10 aspect-video"
+                src={image}
+                alt={`Captura de pantalla del proyecto ${image}`}
+              />
+            </div>
             <div className="flex items-center justify-center pt-10 gap-3">
                 <a 
                   href={github} 

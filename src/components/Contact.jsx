@@ -17,7 +17,7 @@ export default function Component() {
         <div className="grid grid-cols-1 pt-7 sm:pt-1 lg:grid-cols-4 gap-x-2 gap-y-3 w-40 mx-auto sm:w-full">
         <a
             className="bg-white/10 border border-white/10 rounded-full flex
-            justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-base md:text-base 
+            justify-center items-center gap-x-2 py-2 px-2 md:py-2 md:px-4 text-base md:text-base 
             text-white/70 transition hover:scale-110 hover:bg-white/10 hover:text-white"
             href="#"
           >
@@ -26,7 +26,7 @@ export default function Component() {
           </a>
           <a
             className="bg-white/10 border border-white/10 rounded-full flex
-            justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-base md:text-base 
+            justify-center items-center gap-x-2 py-2 px-2 md:py-2 md:px-4 text-base md:text-base 
             text-white/70 transition hover:scale-110 hover:bg-white/10 hover:text-white"
             href="#"
           >
@@ -35,7 +35,7 @@ export default function Component() {
           </a>
           <a
             className="bg-white/10 border border-white/10 rounded-full flex
-            justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-base md:text-base 
+            justify-center items-center gap-x-2 py-2 px-2 md:py-2 md:px-4 text-base md:text-base 
             text-white/70 transition hover:scale-110 hover:bg-white/10 hover:text-white"
             href="#"
           >
@@ -44,7 +44,7 @@ export default function Component() {
           </a>
           <a
             className="bg-white/10 border border-white/10 rounded-full flex
-            justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-base md:text-base 
+            justify-center items-center gap-x-2 py-2 px-2 md:py-2 md:px-4 text-base md:text-base 
             text-white/70 transition hover:scale-110 hover:bg-white/10 hover:text-white"
             href="#"
           >

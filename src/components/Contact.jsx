@@ -18,7 +18,7 @@ export default function Component() {
         <a
             className="bg-white/10 border border-white/10 rounded-full flex
             justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-base md:text-base 
-            text-white/60 transition hover:scale-110 hover:bg-white/10 hover:text-white"
+            text-white/70 transition hover:scale-110 hover:bg-white/10 hover:text-white"
             href="#"
           >
             <WhatsAppIcon className="h-5 w-5" />
@@ -27,7 +27,7 @@ export default function Component() {
           <a
             className="bg-white/10 border border-white/10 rounded-full flex
             justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-base md:text-base 
-            text-white/60 transition hover:scale-110 hover:bg-white/10 hover:text-white"
+            text-white/70 transition hover:scale-110 hover:bg-white/10 hover:text-white"
             href="#"
           >
             <GmailIcon className="h-4 w-4" />
@@ -36,7 +36,7 @@ export default function Component() {
           <a
             className="bg-white/10 border border-white/10 rounded-full flex
             justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-base md:text-base 
-            text-white/60 transition hover:scale-110 hover:bg-white/10 hover:text-white"
+            text-white/70 transition hover:scale-110 hover:bg-white/10 hover:text-white"
             href="#"
           >
             <GitHubIcon className="h-4 w-4" />
@@ -45,7 +45,7 @@ export default function Component() {
           <a
             className="bg-white/10 border border-white/10 rounded-full flex
             justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-base md:text-base 
-            text-white/60 transition hover:scale-110 hover:bg-white/10 hover:text-white"
+            text-white/70 transition hover:scale-110 hover:bg-white/10 hover:text-white"
             href="#"
           >
             <LinkedInIcon className="h-4 w-4" />

@@ -19,7 +19,9 @@ export default function Component() {
             className="bg-white/10 border border-white/10 rounded-full flex
             justify-center items-center gap-x-2 py-2 px-2 md:py-2 md:px-4 text-base md:text-base 
             text-white/70 transition hover:scale-110 hover:bg-white/10 hover:text-white"
-            href="#"
+            href="https://wa.me/543563491814"
+            target="_blank"
+            rel="noreferrer"
           >
             <WhatsAppIcon className="h-5 w-5" />
             WhatsApp
@@ -28,7 +30,7 @@ export default function Component() {
             className="bg-white/10 border border-white/10 rounded-full flex
             justify-center items-center gap-x-2 py-2 px-2 md:py-2 md:px-4 text-base md:text-base 
             text-white/70 transition hover:scale-110 hover:bg-white/10 hover:text-white"
-            href="#"
+            href="mailto:francoogilli10@gmail.com"
           >
             <GmailIcon className="h-4 w-4" />
             Gmail
@@ -37,7 +39,9 @@ export default function Component() {
             className="bg-white/10 border border-white/10 rounded-full flex
             justify-center items-center gap-x-2 py-2 px-2 md:py-2 md:px-4 text-base md:text-base 
             text-white/70 transition hover:scale-110 hover:bg-white/10 hover:text-white"
-            href="#"
+            href="https://github.com/francoogilli"
+            target="_blank"
+            rel="noreferrer"
           >
             <GitHubIcon className="h-4 w-4" />
             GitHub
@@ -46,7 +50,9 @@ export default function Component() {
             className="bg-white/10 border border-white/10 rounded-full flex
             justify-center items-center gap-x-2 py-2 px-2 md:py-2 md:px-4 text-base md:text-base 
             text-white/70 transition hover:scale-110 hover:bg-white/10 hover:text-white"
-            href="#"
+            href="https://www.linkedin.com/in/franco-gilli/"
+            target="_blank"
+            rel="noreferrer"
           >
             <LinkedInIcon className="h-4 w-4" />
             LinkedIn

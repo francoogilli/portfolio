@@ -6,7 +6,7 @@ import GitHubIcon from "../icons/GitHubIcon.jsx";
 
 export default function Component() {
   return (
-    <section id="contact" className="w-full py-12 md:py-24">
+    <section id="contact" className="w-full py-12 md:py-24 mb-20">
       <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
         <div className="space-y-3">
           <h2 className="font-bold text-[2.5rem] text-white justify-center gap-3 flex pb-3 items-center pt-7"><EmailIcon />Contacto</h2>

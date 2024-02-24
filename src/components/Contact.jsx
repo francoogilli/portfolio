@@ -1,169 +1,144 @@
-import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
-import emailjs from "emailjs-com";
-import SendIcon from "../icons/SendIcon.jsx";
-import LoadingIcon from "../icons/LoadingIcon.jsx";
 import GmailIcon from "../icons/GmailIcon.jsx";
 import WhatsAppIcon from "../icons/WhatsAppIcon.jsx";
 import LinkedInIcon from "../icons/LinkedInIcon.jsx";
 import EmailIcon from "../icons/EmailIcon.jsx";
+import GitHubIcon from "../icons/GitHubIcon.jsx";
 
-const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState({ text: "", color: "" });
-
-  const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-
-    setForm({
-      ...form,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Franco Gilli",
-          from_email: form.email,
-          to_email: "francogilli10@gmail.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          setMessage({ text: "Thank you. I will get back to you as soon as possible.", color: "text-green-500" });
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-
-          // Clear the success message after 5 seconds
-          setTimeout(() => {
-            setMessage({ text: "", color: "" });
-          }, 5000);
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          setMessage({ text: "Ahh, something went wrong. Please try again.", color: "text-red-500" });
-        }
-      );
-  };
-
+export default function Component() {
   return (
-    <>
-    <h2 className='font-bold text-4xl text-white justify-center gap-3 flex pb-3 items-center pt-7'><EmailIcon/>Contacto</h2>
-    <section id="contact" className="bg-[#14181a] rounded-3xl mb-7 mx-5 mt-3 max-w-[40rem] lg:mx-auto scroll-mt-28 sm:mb-4 ">
-      <motion.div className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
-        <div className="flex flex-col gap-4">
-
-          <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6">
-            <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your Name</span>
-              <input
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                placeholder="Enter your name"
-                className="bg-zinc-800 py-3 px-5 text-[.9375rem] placeholder:text-secondary text-white rounded-2xl outline-none border-none font-medium"
-              />
-            </label>
-            <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your email</span>
-              <input
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                placeholder="Enter your email address"
-                className="bg-zinc-800 py-3 px-5 text-[.9375rem] placeholder:text-secondary text-white rounded-2xl outline-none border-none font-medium"
-              />
-            </label>
-            <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your Message</span>
-              <textarea
-                rows={3}
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                placeholder="Type your message here"
-                className="bg-zinc-800 py-3 px-5 text-[.9375rem] placeholder:text-secondary text-white rounded-2xl outline-none border-none font-medium "
-              />
-            </label>
-
-            <div className="flex items-center justify-center">
-              <button
-                type="submit"
-                className="flex items-center justify-center  py-3.5 px-14 rounded-full outline-none w-fit gap-1 text-white font-semibold bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br  shadow-sm  shadow-blue-800/80"
-              >
-                {loading ? <LoadingIcon/> : (<>Send<SendIcon/></>)}
-              </button>
-            </div>
-          </form>
-
-          {message.text && (
-            <div className={`${message.color} font-semibold text-center mt-2`}>{message.text}</div>
-          )}        
+    <section className="w-full py-12 md:py-24">
+      <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
+        <div className="space-y-3">
+          <h2 className="font-bold text-[2.5rem] text-white justify-center gap-3 flex pb-3 items-center pt-7"><EmailIcon />Contacto</h2>
+          <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto dark:text-gray-400">
+            Por cualquier duda o consulta no dudes en contactarme.
+          </p>
         </div>
-        <div className="text-white font-medium text-2xl text-center pt-7">or</div>
-          <div className="flex items-center justify-center pt-7 gap-4">
-            <a href="https://wa.me/543563491814" className="text-white bg-white/5 
-              border border-white/10 rounded-full
-              flex justify-center items-center gap-x-2
-              py-1 px-2 md:py-2 md:px-4
-              text-xs md:text-sm
-              transition
-              hover:scale-110 hover:bg-white/10" target="_blank" rel="noopener noreferrer">
-              <WhatsAppIcon/>
-              WhatsApp</a>
-            <a href="mailto:francogilli10@gmail.com" className="text-white bg-white/5 
-              border border-white/10 rounded-full
-              flex justify-center items-center gap-x-2
-              py-1 px-2 md:py-2 md:px-4
-              text-xs md:text-sm
-              transition
-              hover:scale-110 hover:bg-white/10" target="_blank" rel="noopener noreferrer">
-              <GmailIcon/>
-            Gmail</a>
-            <a href="https://www.linkedin.com/in/franco-gilli/" className="
-            text-white bg-white/5 
-              border border-white/10 rounded-full
-              flex justify-center items-center gap-x-2
-              py-1 px-2 md:py-2 md:px-4
-              text-xs md:text-sm
-              transition
-              hover:scale-110 hover:bg-white/10"
-              target="_blank" 
-              rel="noopener noreferrer">
-              <LinkedInIcon/>
-            LinkedIn</a>
-          </div>     
-      </motion.div>
-      
+        <div className="grid grid-cols-1 pt-7 sm:pt-1 lg:grid-cols-4 gap-x-2 gap-y-3 w-32 mx-auto sm:w-full">
+        <a
+            className="bg-white/10 border border-white/10 rounded-full flex
+            justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-[.6875rem] md:text-base 
+            text-white/60 transition hover:scale-110 hover:bg-white/10 hover:text-white"
+            href="#"
+          >
+            <WhatsAppIcon className="h-4 w-4" />
+            WhatsApp
+          </a>
+          <a
+            className="bg-white/10 border border-white/10 rounded-full flex
+            justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-[.6875rem] md:text-base 
+            text-white/60 transition hover:scale-110 hover:bg-white/10 hover:text-white"
+            href="#"
+          >
+            <GmailIcon className="h-4 w-4" />
+            Gmail
+          </a>
+          <a
+            className="bg-white/10 border border-white/10 rounded-full flex
+            justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-[.6875rem] md:text-base 
+            text-white/60 transition hover:scale-110 hover:bg-white/10 hover:text-white"
+            href="#"
+          >
+            <GitHubIcon className="h-4 w-4" />
+            GitHub
+          </a>
+          <a
+            className="bg-white/10 border border-white/10 rounded-full flex
+            justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-[.6875rem] md:text-base 
+            text-white/60 transition hover:scale-110 hover:bg-white/10 hover:text-white"
+            href="#"
+          >
+            <LinkedInIcon className="h-4 w-4" />
+            LinkedIn
+          </a>
+          
+          
+          
+        </div>
+      </div>
     </section>
-    </>
-  );
-};
+  )
+}
 
-export default Contact;
+function GithubIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+      <path d="M9 18c-4.51 2-5-2-7-2" />
+    </svg>
+  )
+}
+
+
+function LinkedinIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect width="4" height="12" x="2" y="9" />
+      <circle cx="4" cy="4" r="2" />
+    </svg>
+  )
+}
+
+
+function MailIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect width="20" height="16" x="2" y="4" rx="2" />
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+    </svg>
+  )
+}
+
+
+function TwitterIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+    </svg>
+  )
+}

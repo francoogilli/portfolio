@@ -1,8 +1,7 @@
 import weatherApp from '../assets/img/weather.webp';
 import ecommerceApp from '../assets/img/ecommerce.webp';
-import ticTacToe from '../assets/img/tic-tac-toe.webp';
 import bikestore from '../assets/img/bikestore2.webp';
-import dona3d from '../assets/img/a1.png';
+import dona3d from '../assets/img/dona3d.webp';
 import resources from '../assets/img/resource.webp';
 
 const links = [

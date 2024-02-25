@@ -6,7 +6,7 @@ import resources from '../assets/img/resource.webp';
 
 const links = [
   {
-    name: "Home",
+    name: "Inicio",
     hash: "#home",
   },
   {

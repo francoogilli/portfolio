@@ -3,6 +3,7 @@ import ecommerceApp from '../assets/img/ecommerce.webp';
 import bikestore from '../assets/img/bikestore2.webp';
 import dona3d from '../assets/img/dona3d.webp';
 import resources from '../assets/img/resource.webp';
+import crypto from '../assets/img/crypto3.png';
 
 const links = [
   {
@@ -148,6 +149,14 @@ const TAGS ={
 export { TAGS };
 
 const PROJECTS = [
+    {
+      title:"Crypto Web - Moderna pagina web de NFTs",
+      description:"Pagina de inicio de una web de Cryptomonedas y NFT, moderna,sencilla y minimalista. La web fue hecha con Astro y Tailwind, con un diseño moderno y bellas ilustraciones.",
+      link: "https://cripto-landing.vercel.app/",
+      github: "https://github.com/francoogilli/cripto-landing",
+      image: crypto,
+      tags: [TAGS.ASTRO, TAGS.TAILWIND],
+    },
     {
       title:"Dona 3D - Empresa de impresion 3D",
       description:"Sitio web para una empresa de Impresion 3D,a su vez el sitio cuenta con una landing page y hace un recorrido sobre los distintos servicios que ofrece la empresa. \nTambien cuenta con una galeria de los productos que ofrece la empresa, asi como una seccion de Contacto en la cual el cliente puede contactarse directamente atraves de un formulario.",

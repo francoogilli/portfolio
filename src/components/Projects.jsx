@@ -97,9 +97,9 @@ const Projects = () => {
                     tech
                   )}
                 </li>
-              ))}
+              ))}1.
             </ul>
-            <div className="rounded-xl overflow-clip">
+            <div className="rounded-[1.1875rem] overflow-clip">
               <img
                 loading="lazy"
                 className="rounded-xl hover:scale-105 transition-transform duration-500 shadow-2xl shadow-white/10 aspect-video"

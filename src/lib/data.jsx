@@ -3,7 +3,7 @@ import bikestore from '../assets/img/bikestore2.webp';
 import dona3d from '../assets/img/dona3d.webp';
 import resources from '../assets/img/resource.webp';
 import crypto from '../assets/img/crypto3.png';
-import bible from '/bible.png'
+import bible from '/bible.webp'
 
 const links = [
   {

@@ -4,6 +4,7 @@ import bikestore from '../assets/img/bikestore2.webp';
 import dona3d from '../assets/img/dona3d.webp';
 import resources from '../assets/img/resource.webp';
 import crypto from '../assets/img/crypto3.png';
+import bible from '/bible.png'
 
 const links = [
   {
@@ -149,6 +150,14 @@ const TAGS ={
 export { TAGS };
 
 const PROJECTS = [
+  {
+    title:"Biblia - Descubre la Palabra gratis.",
+    description:"Explora la Sagrada Escritura en esta moderna página web de la Biblia. Navega por sus enseñanzas, historias y sabiduría divina de manera sencilla y minimalista. La web fue diseñada con un enfoque moderno y está adornada con ilustraciones inspiradoras.",
+    link: "https://la-biblia.vercel.app/",
+    github: "https://github.com/francoogilli/bible",
+    image: bible,
+    tags: [TAGS.NEXTJS, TAGS.TAILWIND],
+  },
     {
       title:"Crypto Web - Moderna pagina web de NFTs",
       description:"Pagina de inicio de una web de Cryptomonedas y NFT, moderna,sencilla y minimalista. La web fue hecha con Astro y Tailwind, con un diseño moderno y bellas ilustraciones.",

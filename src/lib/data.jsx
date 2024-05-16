@@ -1,5 +1,4 @@
 import weatherApp from '../assets/img/weather.webp';
-import ecommerceApp from '../assets/img/ecommerce.webp';
 import bikestore from '../assets/img/bikestore2.webp';
 import dona3d from '../assets/img/dona3d.webp';
 import resources from '../assets/img/resource.webp';
@@ -189,14 +188,6 @@ const PROJECTS = [
       github: "https://github.com/francoogilli/weather",
       image: weatherApp,
       tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.TAILWIND],
-    },
-    {
-      title: "Ecommerce - Tienda de ropa deportiva",
-      description: "Un refugio en línea para los entusiastas del deporte, nuestra Tienda de Ropa Deportiva de Comercio Electrónico combina perfectamente estilo y rendimiento, ofreciendo una amplia gama de ropa deportiva.\n **Descripción web:** En este proyecto de desarrollo, se creó un sitio web de comercio de ropa deportiva, utilizando el poder de Next.js 14, Stripe y Sanity.io. \n **Tecnologías Destacadas:** Next.js 14: La última versión de Next.js proporciona un rendimiento optimizado, una estructura de código más limpia y una navegación más rápida. Aproveché las últimas características de Next.js para construir un sitio web moderno y eficiente. \n **Sanity.io:** Utilicé Sanity.io como un CMS (Sistema de Gestión de Contenidos) flexible y potente. Esto facilita la gestión y actualización de productos, categorías y contenido en general, proporcionando una administración eficiente de la tienda en línea. \n **Características Destacadas:** Interfaz de Usuario Intuitiva: Diseñé una interfaz de usuario intuitiva y atractiva para ofrecer una experiencia de compra agradable. La navegación fácil y las páginas cuidadosamente estructuradas permiten a los usuarios encontrar y explorar productos con facilidad. \n **Gestión de Contenidos Eficiente:** Utilizando Sanity.io, la gestión de contenidos se vuelve eficiente y accesible. Los propietarios de tiendas pueden actualizar fácilmente los detalles del producto, las imágenes y las categorías sin necesidad de conocimientos técnicos.",
-      link: "https://ecommerce-fg.vercel.app/",
-      github: "https://github.com/francoogilli/ecommerce-nextjs",
-      image: ecommerceApp,
-      tags: [TAGS.NEXTJS,TAGS.SANITY,TAGS.TAILWIND],
     },
     {
       title: "Bike Store",
